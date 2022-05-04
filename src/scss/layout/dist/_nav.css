@@ -1,0 +1,30 @@
+.navbar {
+  max-width: 1044px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__listcontainer {
+  display: flex;
+  margin-left: 50px;
+  width: 275px;
+  justify-content: space-between;
+}
+
+.navbar__right {
+  display: flex;
+  border: 1px solid red;
+  width: 300px;
+}

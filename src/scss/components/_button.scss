@@ -1,0 +1,15 @@
+@use "../abstract/variables" as variable;
+.button {
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+.navbar__button {
+	width: 137px;
+	height: 52px;
+	background-color: variable.$primary-color;
+	color: variable.$light-text-color;
+	font-size: 14px;
+	font-weight: 700;
+	margin: auto;
+}

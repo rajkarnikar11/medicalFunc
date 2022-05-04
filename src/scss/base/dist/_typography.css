@@ -1,0 +1,22 @@
+* {
+  font-family: "montserrat";
+}
+
+li {
+  list-style: none;
+}
+
+.navbar__left {
+  color: #737373;
+}
+
+.navbar__logo {
+  color: #252B42;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navbar__list {
+  font-weight: 700;
+  font-size: 14px;
+}

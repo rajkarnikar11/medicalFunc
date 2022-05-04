@@ -1,0 +1,52 @@
+.navbar {
+  max-width: 1044px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__listcontainer {
+  display: flex;
+  margin-left: 50px;
+  width: 275px;
+  justify-content: space-between;
+}
+
+.navbar__right {
+  display: flex;
+  background-color: aqua;
+  width: 214px;
+}
+
+* {
+  font-family: "montserrat";
+}
+
+li {
+  list-style: none;
+}
+
+.navbar__left {
+  color: #737373;
+}
+
+.navbar__logo {
+  color: #252B42;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navbar__list {
+  font-weight: 700;
+  font-size: 14px;
+}

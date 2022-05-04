@@ -1,0 +1,15 @@
+.button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__button {
+  width: 137px;
+  height: 52px;
+  background-color: #23a6f0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: auto;
+}

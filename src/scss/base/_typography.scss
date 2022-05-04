@@ -1,0 +1,19 @@
+@use "../abstract/variables" as variable;
+* {
+	font-family: variable.$font;
+}
+li {
+	list-style: none;
+}
+.navbar__left {
+	color: variable.$secondary-color;
+}
+.navbar__logo {
+	color: variable.$text-color;
+	font-weight: 700;
+	font-size: 24px;
+}
+.navbar__list {
+	font-weight: 700;
+	font-size: 14px;
+}
