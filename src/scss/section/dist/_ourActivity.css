@@ -1,11 +1,11 @@
 .activity {
   height: 100vh;
+  padding-top: 160px;
 }
 
 .activity__container {
   max-width: 1050px;
   margin: auto;
-  margin-top: 160px;
 }
 
 .activity__description {

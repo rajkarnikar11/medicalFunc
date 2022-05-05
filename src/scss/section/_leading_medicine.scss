@@ -1,0 +1,39 @@
+@use "../abstract/variables" as variable;
+
+.leading_medicine {
+	height: 100vh;
+	background-color: variable.$faded-secondary-color-2;
+}
+.leading_medicine__container {
+	max-width: 1050px;
+	outline: 1px solid red;
+	height: 100%;
+	margin: auto;
+	padding-top: 291px;
+	display: flex;
+}
+
+.leading_medicine__title {
+	&:before {
+		position: absolute;
+		top: -35px;
+		content: " ";
+		height: 7px;
+		width: 94px;
+		background-color: variable.$danger-color;
+	}
+}
+
+.leading_medicine__left,
+.leading_medicine__right {
+	outline: 1px solid red;
+	width: 50%;
+}
+.leading_medicine__linkcontainer {
+	display: flex;
+	margin-top: 35px;
+	width: 101px;
+	height: 24px;
+	justify-content: space-between;
+	align-items: center;
+}

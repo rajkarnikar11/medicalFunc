@@ -46,11 +46,12 @@
 
 .activity {
   height: 100vh;
+  padding-top: 160px;
 }
 
 .activity__container {
   max-width: 1050px;
-  margin: 160px auto auto;
+  margin: auto;
 }
 
 .activity__description {
@@ -63,9 +64,46 @@
   display: flex;
 }
 
+.leading_medicine {
+  height: 100vh;
+  background-color: #ffdcd1;
+}
+
+.leading_medicine__container {
+  max-width: 1050px;
+  height: 100%;
+  outline: 1px solid red;
+  margin: auto;
+  padding-top: 291px;
+  display: flex;
+}
+
+.leading_medicine__title:before {
+  content: " ";
+  height: 7px;
+  width: 94px;
+  background-color: #e74040;
+  position: absolute;
+  top: -35px;
+}
+
+.leading_medicine__left, .leading_medicine__right {
+  width: 50%;
+  outline: 1px solid red;
+}
+
+.leading_medicine__linkcontainer {
+  width: 101px;
+  height: 24px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  display: flex;
+}
+
 .navbar {
   max-width: 1044px;
-  z-index: 1;
+  z-index: 2;
   height: 91px;
   justify-content: space-between;
   margin: auto;
@@ -226,6 +264,30 @@ li {
   line-height: 20px;
 }
 
+.leading_medicine__title {
+  color: #252b42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  position: relative;
+}
+
+.leading_medicine__description {
+  width: 351px;
+  height: 60px;
+  color: #737373;
+  margin-top: 35px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.leading_medicine__linktext {
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .navbar__button {
   width: 137px;
   height: 52px;
@@ -259,6 +321,7 @@ li {
 }
 
 * {
+  box-sizing: border-box;
   border: 0;
   margin: 0;
   padding: 0;

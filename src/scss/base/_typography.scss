@@ -111,3 +111,27 @@ li {
 	font-size: 14px;
 	line-height: 20px;
 }
+
+// leading medicine section
+
+.leading_medicine__title {
+	position: relative;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	color: variable.$text-color;
+}
+.leading_medicine__description {
+	width: 351px;
+	height: 60px;
+	font-size: 14px;
+	line-height: 20px;
+	color: variable.$secondary-color;
+	margin-top: 35px;
+}
+.leading_medicine__linktext {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: variable.$primary-color;
+}

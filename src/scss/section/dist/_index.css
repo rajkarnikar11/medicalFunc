@@ -43,3 +43,24 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.activity {
+  height: calc(100vh - 160px);
+  padding-top: 160px;
+  outline: 1px solid red;
+}
+
+.activity__container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.activity__description {
+  width: 469px;
+}
+
+.activity__cardcontainer {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
