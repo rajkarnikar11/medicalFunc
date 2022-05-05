@@ -44,6 +44,25 @@
   justify-content: space-between;
 }
 
+.activity {
+  height: 100vh;
+}
+
+.activity__container {
+  max-width: 1050px;
+  outline: 1px solid red;
+  margin: auto;
+  margin-top: 160px;
+}
+
+.activity__description {
+  width: 469px;
+}
+
+.activity__cardcontainer {
+  display: flex;
+}
+
 .navbar {
   max-width: 1044px;
   margin: auto;
@@ -70,6 +89,10 @@
   margin-left: 50px;
   width: 275px;
   justify-content: space-between;
+}
+
+.navbar__list {
+  cursor: pointer;
 }
 
 .navbar__right {
@@ -150,6 +173,47 @@ li {
   color: #23a6f0;
 }
 
+.popup__listleft {
+  font-size: 10px;
+  color: #b2e3ff;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.popup__listleft--active {
+  font-size: 13px;
+  line-height: 15px;
+  color: #23a6f0;
+  font-weight: 500;
+}
+
+.popup__listcontainer--right {
+  font-size: 13px;
+  color: #b2e3ff;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.activity__practiceadvice {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
+}
+
+.activity__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #252b42;
+}
+
+.activity__description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
 .navbar__button {
   width: 137px;
   height: 52px;
@@ -194,6 +258,10 @@ body {
   position: relative;
 }
 
+a {
+  cursor: pointer;
+}
+
 .home__shape--topleft {
   height: 177px;
   width: 112px;
@@ -232,7 +300,20 @@ body {
 
 .home__popup--square {
   position: absolute;
-  height: 219px;
-  width: 219px;
-  background-color: white;
+  left: 32px;
+  top: 122px;
+  z-index: 1;
+}
+
+.home__popup--rectangle {
+  position: absolute;
+  left: 59px;
+  bottom: 40;
+  z-index: 1;
+}
+
+.activity__card {
+  padding: 40px 42.5px;
+  height: 288px;
+  width: 328px;
 }

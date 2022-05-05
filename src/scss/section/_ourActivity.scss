@@ -3,7 +3,6 @@
 }
 .activity__container {
 	max-width: 1050px;
-	outline: 1px solid red;
 	margin: auto;
 	margin-top: 160px;
 }
@@ -12,4 +11,6 @@
 }
 .activity__cardcontainer {
 	display: flex;
+	margin-top: 80px;
+	justify-content: space-between;
 }

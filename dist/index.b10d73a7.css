@@ -50,7 +50,6 @@
 
 .activity__container {
   max-width: 1050px;
-  outline: 1px solid red;
   margin: 160px auto auto;
 }
 
@@ -59,6 +58,8 @@
 }
 
 .activity__cardcontainer {
+  justify-content: space-between;
+  margin-top: 80px;
   display: flex;
 }
 
@@ -213,6 +214,18 @@ li {
   line-height: 20px;
 }
 
+.activity__cardtitle {
+  size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.activity__carddescription {
+  color: #737373;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .navbar__button {
   width: 137px;
   height: 52px;
@@ -308,6 +321,41 @@ a {
   position: absolute;
   bottom: 40px;
   left: 59px;
+}
+
+.activity__card {
+  height: 288px;
+  width: 328px;
+  box-shadow: 0 13px 19px #00000012;
+}
+
+.activity__cardimage {
+  margin-top: 40px;
+  margin-left: 42.5px;
+}
+
+.activity__cardtitle {
+  margin-top: 25px;
+  margin-left: 42.5px;
+  position: relative;
+}
+
+.activity__cardtitle:after {
+  content: " ";
+  height: 2px;
+  width: 50px;
+  background-color: #e74040;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.activity__carddescription {
+  width: 132px;
+  height: 60px;
+  margin-top: 40px;
+  margin-left: 42.5px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */
