@@ -1,4 +1,6 @@
-@use "./section/home";
+@use "./section";
 @use "./layout/nav";
 @use "./base/typography";
 @use "./components/button";
+@use "./base/resets";
+@use "./components/_shapes";

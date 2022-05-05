@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="./scss/main.scss" />
 	</head>
 	<body>
+		<!-- nabvar -->
+
 		<nav class="navbar">
 			<div class="navbar__container navbar__left">
 				<h1 class="navbar__logo">MedicalFunc</h1>
@@ -26,7 +28,7 @@
 			</div>
 			<div class="navbar__container navbar__right">
 				<a class="navbar__login">Login</a>
-				<button class="button navbar__button">
+				<button class="navbar__button">
 					<span> join us </span>
 					<span>
 						<img
@@ -39,7 +41,46 @@
 				</button>
 			</div>
 		</nav>
-		<section class="home"></section>
+
+		<!-- home -->
+
+		<section id="home" class="home">
+			<div class="home__shape--topleft"></div>
+			<div class="home__shape--topright"></div>
+			<div class="home__container">
+				<div class="home__herosection herosection__left">
+					<p class="home__welcome">Welcome</p>
+					<h2 class="home__title">
+						Online <br />
+						Appointment
+					</h2>
+					<p class="home__description">
+						Medical Functional is most focused in helping you
+						discover your most beauiful smile
+					</p>
+					<div class="home__buttoncontainer">
+						<button class="home__button--primary">
+							Get Quote Now
+						</button>
+						<button class="home__button--white">Learn More</button>
+					</div>
+				</div>
+				<div class="home__herosection herosection__right">
+					<img
+						class="home__image"
+						src="./assets/heroimage.png"
+						alt="image of a doctor"
+						height="566px"
+						width="440px"
+					/>
+					<div class="home__shapecontainer">
+						<div class="home__shape--lightblue"></div>
+						<div class="home__shape--pink"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<script type="module" src="./js/main.js"></script>
 	</body>
 </html>

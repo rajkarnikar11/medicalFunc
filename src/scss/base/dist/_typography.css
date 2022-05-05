@@ -26,3 +26,47 @@ li {
   font-size: 14px;
   font-weight: 700;
 }
+
+.home__welcome {
+  font-size: 16px;
+  line-height: 24px;
+  color: #23a6f0;
+  font-weight: 700;
+}
+
+.home__title {
+  color: #252b42;
+  font-size: 58px;
+  line-height: 80px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.home__description {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #737373;
+  width: 520px;
+  margin-top: 30px;
+}
+
+.navbar__button {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.home__button--primary {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.home__button--white {
+  font-weight: 700;
+  font-size: 14px;
+  color: #23a6f0;
+}

@@ -1,0 +1,26 @@
+@use "../abstract/variables" as variable;
+
+.home__shape--topleft {
+	height: 177px;
+	width: 112px;
+	background-color: variable.$faded-primary-color;
+	position: absolute;
+	top: 0px;
+	border-radius: 0 0 50% 0;
+	z-index: -1;
+}
+.home__shape--topright {
+	height: 700px;
+	width: 604px;
+	background-color: variable.$faded-primary-color;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+}
+.home__shape--lightblue {
+	height: 70px;
+	width: 70px;
+	background: #e2f6ff;
+	border-radius: 0 100% 0 0;
+}
