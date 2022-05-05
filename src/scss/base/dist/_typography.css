@@ -11,7 +11,7 @@ li {
 }
 
 .navbar__logo {
-  color: #252B42;
+  color: #252b42;
   font-weight: 700;
   font-size: 24px;
 }
@@ -19,4 +19,10 @@ li {
 .navbar__list {
   font-weight: 700;
   font-size: 14px;
+}
+
+.navbar__login {
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 700;
 }

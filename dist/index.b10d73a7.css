@@ -4,6 +4,7 @@
   margin: auto;
   display: flex;
   position: sticky;
+  top: 0;
 }
 
 .navbar__container {
@@ -25,7 +26,6 @@
 
 .navbar__right {
   width: 300px;
-  border: 1px solid red;
   display: flex;
 }
 
@@ -52,6 +52,12 @@ li {
   font-weight: 700;
 }
 
+.navbar__login {
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .button {
   cursor: pointer;
   border: none;
@@ -62,10 +68,14 @@ li {
   width: 137px;
   height: 52px;
   color: #fff;
+  text-transform: uppercase;
   background-color: #23a6f0;
+  justify-content: space-around;
+  align-items: center;
   margin: auto;
   font-size: 14px;
   font-weight: 700;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */
