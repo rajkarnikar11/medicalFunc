@@ -81,3 +81,23 @@ li {
 	font-weight: 300;
 	line-height: 15px;
 }
+
+// our activity section
+
+.activity__practiceadvice {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: variable.$primary-color;
+}
+.activity__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	color: variable.$text-color;
+}
+.activity__description {
+	font-size: 14px;
+	line-height: 20px;
+	color: variable.$secondary-color;
+}

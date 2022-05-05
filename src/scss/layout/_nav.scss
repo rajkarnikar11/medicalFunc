@@ -23,6 +23,9 @@
 	width: 275px;
 	justify-content: space-between;
 }
+.navbar__list {
+	cursor: pointer;
+}
 .navbar__right {
 	display: flex;
 	// border: 1px solid red;

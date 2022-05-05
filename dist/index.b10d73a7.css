@@ -44,6 +44,24 @@
   display: flex;
 }
 
+.activity {
+  height: 100vh;
+}
+
+.activity__container {
+  max-width: 1050px;
+  outline: 1px solid red;
+  margin: 160px auto auto;
+}
+
+.activity__description {
+  width: 469px;
+}
+
+.activity__cardcontainer {
+  display: flex;
+}
+
 .navbar {
   max-width: 1044px;
   z-index: 1;
@@ -70,6 +88,10 @@
   justify-content: space-between;
   margin-left: 50px;
   display: flex;
+}
+
+.navbar__list {
+  cursor: pointer;
 }
 
 .navbar__right {
@@ -171,6 +193,26 @@ li {
   line-height: 15px;
 }
 
+.activity__practiceadvice {
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.activity__title {
+  color: #252b42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.activity__description {
+  color: #737373;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .navbar__button {
   width: 137px;
   height: 52px;
@@ -212,6 +254,10 @@ li {
 
 body {
   position: relative;
+}
+
+a {
+  cursor: pointer;
 }
 
 .home__shape--topleft {

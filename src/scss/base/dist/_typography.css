@@ -91,3 +91,23 @@ li {
   font-weight: 300;
   line-height: 15px;
 }
+
+.activity__practiceadvice {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
+}
+
+.activity__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #252b42;
+}
+
+.activity__description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
