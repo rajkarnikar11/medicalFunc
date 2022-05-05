@@ -72,9 +72,7 @@
 .leading_medicine__container {
   max-width: 1050px;
   height: 100%;
-  outline: 1px solid red;
   margin: auto;
-  padding-top: 291px;
   display: flex;
 }
 
@@ -89,7 +87,10 @@
 
 .leading_medicine__left, .leading_medicine__right {
   width: 50%;
-  outline: 1px solid red;
+}
+
+.leading_medicine__left {
+  margin-top: 290px;
 }
 
 .leading_medicine__linkcontainer {
@@ -99,6 +100,16 @@
   align-items: center;
   margin-top: 35px;
   display: flex;
+}
+
+.leading_medicine__right {
+  position: relative;
+}
+
+.leading_medicine__testubeimage {
+  margin-top: 160px;
+  margin-left: 99px;
+  position: relative;
 }
 
 .navbar {
