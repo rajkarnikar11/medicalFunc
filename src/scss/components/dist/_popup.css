@@ -1,0 +1,13 @@
+.home__popup--square {
+  position: absolute;
+  left: 32px;
+  top: 122px;
+  z-index: 1;
+}
+
+.home__popup--rectangle {
+  position: absolute;
+  left: 59px;
+  bottom: 40;
+  z-index: 1;
+}

@@ -1,0 +1,41 @@
+@use "../abstract/variables" as variable;
+
+.home__popup--square {
+	position: absolute;
+	left: 32px;
+	top: 122px;
+	z-index: 1;
+}
+.home__popup--rectangle {
+	position: absolute;
+	// height: 113px;
+	// width: 371px;
+	// background-color: white;
+	left: 59px;
+	bottom: 40;
+	z-index: 1;
+	// box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.2);
+	// border-radius: 14px;
+	// padding: 10px;
+}
+// }
+// .popup__listcontainer {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// }
+// .popup__listcontainer--left {
+// 	display: flex;
+// }
+// .popup__listcontainer--right {
+// }
+// .popup__listleft,
+// .popup__listleft--active {
+// 	margin: 0 5px;
+// 	padding: 5px;
+// }
+// .popup__listleft--active {
+// 	background-color: variable.$faded-primary-color;
+
+// 	border-radius: 5px;
+// }

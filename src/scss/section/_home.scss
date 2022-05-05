@@ -1,15 +1,15 @@
 .home {
-	height: calc(777px - 91px);
+	height: calc(100vh - 91px);
 }
 .home__container {
-	width: calc(1440px - 132px);
-	height: calc(777px - 160px);
+	width: calc(100% - 132px);
+	height: calc(100% - 160px);
 	float: right;
 	display: flex;
 }
 .home__herosection {
 	width: 50%;
-
+	margin-top: 50px;
 	height: 100%;
 	position: relative;
 }
@@ -23,8 +23,7 @@
 	flex-direction: row;
 	justify-content: right;
 	// align-items: flex-end;
-	border: 1px solid red;
-	padding-bottom: 0;
+	height: 588px;
 }
 .home__image {
 }
@@ -36,6 +35,8 @@
 	width: 86px;
 	margin-top: 0;
 	padding-left: 10px;
-	border-radius: 1px solid red;
-	height: 70px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }

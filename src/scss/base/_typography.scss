@@ -60,3 +60,24 @@ li {
 	font-size: 14px;
 	color: variable.$primary-color;
 }
+
+// home section
+.popup__listleft {
+	font-size: 10px;
+	color: variable.$faded-primary-color;
+	font-weight: 500;
+	line-height: 15px;
+}
+
+.popup__listleft--active {
+	font-size: 13px;
+	line-height: 15px;
+	color: variable.$primary-color;
+	font-weight: 500;
+}
+.popup__listcontainer--right {
+	font-size: 13px;
+	color: variable.$faded-primary-color;
+	font-weight: 300;
+	line-height: 15px;
+}

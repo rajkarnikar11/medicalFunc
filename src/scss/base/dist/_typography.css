@@ -70,3 +70,24 @@ li {
   font-size: 14px;
   color: #23a6f0;
 }
+
+.popup__listleft {
+  font-size: 10px;
+  color: #b2e3ff;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.popup__listleft--active {
+  font-size: 13px;
+  line-height: 15px;
+  color: #23a6f0;
+  font-weight: 500;
+}
+
+.popup__listcontainer--right {
+  font-size: 13px;
+  color: #b2e3ff;
+  font-weight: 300;
+  line-height: 15px;
+}
