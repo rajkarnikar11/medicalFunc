@@ -8,10 +8,6 @@
   margin: auto;
 }
 
-.activity__description {
-  width: 469px;
-}
-
 .activity__cardcontainer {
   display: flex;
   margin-top: 80px;

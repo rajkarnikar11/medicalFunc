@@ -1,13 +1,37 @@
 .home__popup--square {
   position: absolute;
-  left: 32px;
+  right: 363px;
   top: 122px;
   z-index: 1;
 }
 
 .home__popup--rectangle {
   position: absolute;
-  left: 59px;
+  right: 184.5px;
   bottom: 40;
   z-index: 1;
+}
+
+.leading_medicine__popup--rectangle {
+  position: absolute;
+  top: 325px;
+  left: 78px;
+  height: 110px;
+  width: 362px;
+}
+
+.leading_medicine__popup--square {
+  position: absolute;
+  left: 282px;
+  top: 48px;
+}
+
+.specialize__sale {
+  background-color: #e74040;
+  width: 51px;
+  height: 24px;
+  box-shadow: 0 2px 4px #0000001a;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
 }

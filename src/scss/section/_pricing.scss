@@ -1,0 +1,14 @@
+@use "../abstract/variables" as variable;
+
+.pricing__container {
+	height: 100%;
+	width: 100%;
+}
+.pricing__cardcontainer {
+	position: relative;
+	margin-top: 80px;
+	display: grid;
+	place-items: center;
+	gap: 30.5px;
+	grid-template-columns: repeat(auto-fill, (minmax(328px, 1fr)));
+}

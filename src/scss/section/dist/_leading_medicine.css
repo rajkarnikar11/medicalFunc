@@ -39,11 +39,33 @@
 
 .leading_medicine__right {
   position: relative;
+  display: flex;
 }
 
 .leading_medicine__testubeimage {
+  position: absolute;
+  right: -82px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.leading_medicine__testubeimagecontainer {
   position: relative;
-  background-image: url(../../assets/rectangularbackground.svg);
-  margin-left: 99px;
+  height: 396px;
+  width: 338px;
   margin-top: 160px;
+  background-image: url(../assets/rectangularbackground.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.leading_medicine__testubeimagecontainer::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+  width: 58px;
+  background-color: #fef3d9;
+  z-index: 1;
+  border-radius: 100px 100px 0 0;
 }

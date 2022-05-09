@@ -29,3 +29,46 @@
 	border: 1px solid variable.$primary-color;
 	background-color: variable.$light-text-color;
 }
+
+//speciaize section
+
+.specialize__button--circle {
+	@include button();
+	height: 40px;
+	width: 40px;
+	background-color: variable.$light-background-color;
+	border-radius: 45px;
+	display: grid;
+	place-items: center;
+	margin: 0px 5px;
+}
+.specialize__button--rectangle {
+	@include button();
+	height: 44px;
+	width: 141.14px;
+	border-radius: 37px;
+	border: 1px solid variable.$primary-color;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: variable.$light-background-color;
+	margin-top: 10px;
+}
+.pricing__button {
+	@include button();
+	height: 52px;
+	width: 243px;
+	display: grid;
+	place-items: center;
+	background-color: variable.$primary-color;
+	border-radius: 5px;
+}
+.joinus__button {
+	@include button();
+	background-color: variable.$primary-color;
+	color: variable.$light-text-color;
+	height: 58px;
+	width: 110px;
+	border-radius: 0 5px 5px 0;
+	margin-left: 0;
+}

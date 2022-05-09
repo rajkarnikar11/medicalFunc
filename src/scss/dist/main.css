@@ -26,7 +26,15 @@
   display: flex;
   flex-direction: row;
   justify-content: right;
+  position: relative;
   height: 588px;
+}
+
+.home__image {
+  position: relative;
+  background-image: url(../assets/heroimage.png);
+  width: 441px;
+  height: 566px;
 }
 
 .home__buttoncontainer {
@@ -46,21 +54,111 @@
 
 .activity {
   height: 100vh;
+  padding-top: 160px;
 }
 
 .activity__container {
   max-width: 1050px;
-  outline: 1px solid red;
   margin: auto;
-  margin-top: 160px;
-}
-
-.activity__description {
-  width: 469px;
 }
 
 .activity__cardcontainer {
   display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.leading_medicine {
+  height: 100vh;
+  background-color: #ffdcd1;
+}
+
+.leading_medicine__container {
+  max-width: 1050px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.leading_medicine__title:before {
+  position: absolute;
+  top: -35px;
+  content: " ";
+  height: 7px;
+  width: 94px;
+  background-color: #e74040;
+}
+
+.leading_medicine__left,
+.leading_medicine__right {
+  width: 50%;
+}
+
+.leading_medicine__left {
+  margin-top: 290px;
+}
+
+.leading_medicine__linkcontainer {
+  display: flex;
+  margin-top: 35px;
+  width: 101px;
+  height: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leading_medicine__right {
+  position: relative;
+  display: flex;
+}
+
+.leading_medicine__testubeimage {
+  position: absolute;
+  right: -82px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.leading_medicine__testubeimagecontainer {
+  position: relative;
+  height: 396px;
+  width: 338px;
+  margin-top: 160px;
+  background-image: url(../assets/rectangularbackground.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.leading_medicine__testubeimagecontainer::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+  width: 58px;
+  background-color: #fef3d9;
+  z-index: 1;
+  border-radius: 100px 100px 0 0;
+}
+
+.specialize__container {
+  height: 100%;
+  width: 100%;
+}
+
+.specialize__cardcontainer {
+  margin-top: 80px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(348px, 1fr));
+}
+
+.specialize__infocontainer {
+  display: flex;
+  height: 46px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .navbar {
@@ -70,7 +168,7 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   height: 91px;
 }
 
@@ -194,24 +292,132 @@ li {
   line-height: 15px;
 }
 
-.activity__practiceadvice {
+.practiceadvice {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   color: #23a6f0;
+  margin: 10px 0;
 }
 
-.activity__title {
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #252b42;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  margin: 10px 0;
+  margin: 10px 0;
+  width: 469px;
+}
+
+.activity__cardtitle {
+  font-weight: 700;
+  size: 16px;
+  line-height: 24px;
+}
+
+.activity__carddescription {
+  color: #737373;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.leading_medicine__title {
+  position: relative;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   color: #252b42;
 }
 
-.activity__description {
+.leading_medicine__description {
+  width: 351px;
+  height: 60px;
   font-size: 14px;
   line-height: 20px;
   color: #737373;
+  margin-top: 35px;
+}
+
+.leading_medicine__linktext {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
+}
+
+.specialize__sale {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.specialize__departmenttext {
+  color: #23a6f0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.specialize__rating {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.specialize__cardtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: #252b42;
+}
+
+.specialize__carddescription {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
+.specialize__salestext {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.specialize__price--grey {
+  font-size: 16px;
+  line-height: 24px;
+  color: #bdbdbd;
+  font-weight: 700;
+}
+
+.specialize__price--green {
+  font-size: 16px;
+  line-height: 24px;
+  color: #40bb15;
+  font-weight: 700;
+}
+
+.specialize__info {
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #737373;
+}
+
+.specialize__button--rectangle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
 }
 
 .navbar__button {
@@ -247,11 +453,40 @@ li {
   background-color: #ffffff;
 }
 
+.specialize__button--circle {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  display: grid;
+  place-items: center;
+  margin: 0px 5px;
+}
+
+.specialize__button--rectangle {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  height: 44px;
+  width: 141.14px;
+  border-radius: 37px;
+  border: 1px solid #23a6f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -300,20 +535,162 @@ a {
 
 .home__popup--square {
   position: absolute;
-  left: 32px;
+  right: 363px;
   top: 122px;
   z-index: 1;
 }
 
 .home__popup--rectangle {
   position: absolute;
-  left: 59px;
+  right: 184.5px;
   bottom: 40;
   z-index: 1;
 }
 
+.leading_medicine__popup--rectangle {
+  position: absolute;
+  top: 325px;
+  left: 78px;
+  height: 110px;
+  width: 362px;
+}
+
+.leading_medicine__popup--square {
+  position: absolute;
+  left: 282px;
+  top: 48px;
+}
+
+.specialize__sale {
+  background-color: #e74040;
+  width: 51px;
+  height: 24px;
+  box-shadow: 0 2px 4px #0000001a;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+}
+
 .activity__card {
-  padding: 40px 42.5px;
   height: 288px;
   width: 328px;
+  box-shadow: 0px 13px 19px 0px #00000012;
+}
+
+.activity__cardimage {
+  margin-top: 40px;
+  margin-left: 42.5px;
+}
+
+.activity__cardtitle {
+  margin-left: 42.5px;
+  margin-top: 25px;
+  position: relative;
+}
+.activity__cardtitle:after {
+  position: absolute;
+  bottom: -20px;
+  content: " ";
+  height: 2px;
+  width: 50px;
+  left: 0;
+  background-color: #e74040;
+}
+
+.activity__carddescription {
+  margin-left: 42.5px;
+  margin-top: 40px;
+  width: 132px;
+  height: 60px;
+  font-weight: 400;
+}
+
+.specialize__card {
+  height: 678px;
+  width: 348px;
+}
+
+.specialize__imagecontainer--first {
+  height: 300px;
+  width: 348px;
+  position: relative;
+  background-image: url("../assets/specialize1.png");
+  background-repeat: no-repeat;
+  background-size: 348px 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specialize__imagecontainer--second {
+  height: 300px;
+  width: 348px;
+  position: relative;
+  background-image: url("../assets/specialize2.png");
+  background-repeat: no-repeat;
+  background-size: 348px 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specialize__imagecontainer--third {
+  height: 300px;
+  width: 348px;
+  position: relative;
+  background-image: url("../assets/specialize3.png");
+  background-repeat: no-repeat;
+  background-size: 348px 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specialize__buttoncontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.specialize__textcontainer {
+  padding: 25px;
+}
+
+.specialize__departmentcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialize__rating {
+  width: 50px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #252b42;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5.5px;
+}
+
+.specialize__cardtitle {
+  margin-top: 11px;
+}
+
+.specialize__carddescription {
+  width: 280px;
+  height: 60px;
+}
+
+.specialize__salescontainer {
+  margin-top: 14px;
+}
+
+.specialize__salestext {
+  margin-left: 10px;
+}
+
+.container {
+  padding: 160px 198px;
 }
