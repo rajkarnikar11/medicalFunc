@@ -43,6 +43,10 @@ li {
 	line-height: 80px;
 	margin-top: 30px;
 	font-weight: bold;
+	@include respond-to("mobile") {
+		font-size: 45px;
+		line-height: 50px;
+	}
 }
 .home__description {
 	font-size: 20px;

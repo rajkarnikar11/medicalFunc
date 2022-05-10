@@ -2,10 +2,12 @@
 @use "../abstract/mixins" as *;
 
 .navbar__button {
+	position: relative;
+	z-index: 1;
 	width: 137px;
 	height: 52px;
 	background-color: variable.$primary-color;
-
+	opacity: 1;
 	margin: auto;
 	text-transform: uppercase;
 	display: flex;

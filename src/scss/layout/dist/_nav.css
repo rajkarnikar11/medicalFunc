@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   height: 91px;
-  outline: 1px solid red;
 }
 @media (max-width: 992px) {
   .navbar {
@@ -22,6 +21,30 @@
   .navbar {
     max-width: 90%;
   }
+}
+
+.navbar__burgercontainer {
+  height: 35px;
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 10px;
+  display: none;
+}
+@media (max-width: 992px) {
+  .navbar__burgercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.navbar__burgerline {
+  height: 3px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #252b42;
 }
 
 .navbar__container {
@@ -48,18 +71,71 @@
 @media (max-width: 992px) {
   .navbar__listcontainer {
     flex-direction: column;
-    outline: 1px solid rebeccapurple;
     margin: auto;
+    width: 80vw;
+    display: none;
+  }
+}
+
+.navbar__listcontainer--small {
+  display: flex;
+  margin-left: 50px;
+  width: 275px;
+  opacity: 0;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .navbar__listcontainer--small {
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+    margin-top: 10px;
   }
 }
 
 .navbar__list {
   cursor: pointer;
+  position: relative;
+}
+.navbar__list::before {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background-color: #23a6f0;
+  transition: 0.3s linear;
+  transform-origin: right;
+  right: 0;
+}
+.navbar__list:hover::before {
+  width: 100%;
+  left: 0;
+}
+@media (max-width: 992px) {
+  .navbar__list:hover::before {
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 50%;
+  }
 }
 @media (max-width: 992px) {
   .navbar__list {
-    margin: 5px;
+    margin: 15px;
+    position: relative;
     text-align: center;
+  }
+  .navbar__list::after {
+    content: " ";
+    height: 1px;
+    opacity: 0.8;
+    background-color: #252b42;
+    width: 25%;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -67,16 +143,34 @@
   display: flex;
   width: 300px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .navbar__right {
-    outline: 1px solid blue;
     flex-direction: column;
+    width: 80vw;
+    display: none;
+  }
+}
+
+.navbar__right--small {
+  display: flex;
+  width: 300px;
+  display: none;
+}
+@media (max-width: 992px) {
+  .navbar__right--small {
+    flex-direction: column;
+    width: 80vw;
   }
 }
 
 @media (max-width: 992px) {
   .navbar__logo {
-    background-color: aqua;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar__login {
+    margin: 5px;
   }
 }
