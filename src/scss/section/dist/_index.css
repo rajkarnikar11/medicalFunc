@@ -52,20 +52,13 @@
   justify-content: space-between;
 }
 
-.activity {
-  height: 100vh;
-  padding-top: 160px;
-}
-
-.activity__container {
-  max-width: 1050px;
-  margin: auto;
-}
-
 .activity__cardcontainer {
-  display: flex;
+  position: relative;
   margin-top: 80px;
-  justify-content: space-between;
+  display: grid;
+  place-items: center;
+  gap: 30.5px;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
 }
 
 .leading_medicine {
@@ -183,10 +176,6 @@
   grid-template-columns: repeat(auto-fill, minmax(348px, 1fr));
 }
 
-.joinus {
-  outline: 1px solid red;
-}
-
 .joinus__inputcontainer {
   width: 686px;
   margin: auto;
@@ -201,4 +190,39 @@
   background-color: #f9f9f9;
   border-radius: 5px 0 0 5px;
   margin-right: 0;
+}
+
+.footer {
+  padding: 50px 195px;
+  display: flex;
+}
+
+.footer__gridcontainer {
+  width: 75%;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  min-width: 150px;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+}
+
+.footer__contacts {
+  width: 25%;
+  min-width: 290px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__itemcontainer {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer__item,
+.footer__item--right {
+  margin-left: 10px;
 }

@@ -1,14 +1,8 @@
-.activity {
-	height: 100vh;
-	padding-top: 160px;
-}
-.activity__container {
-	max-width: 1050px;
-	margin: auto;
-}
-
 .activity__cardcontainer {
-	display: flex;
+	position: relative;
 	margin-top: 80px;
-	justify-content: space-between;
+	display: grid;
+	place-items: center;
+	gap: 30.5px;
+	grid-template-columns: repeat(auto-fill, (minmax(328px, 1fr)));
 }

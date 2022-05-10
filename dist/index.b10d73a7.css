@@ -52,20 +52,13 @@
   display: flex;
 }
 
-.activity {
-  height: 100vh;
-  padding-top: 160px;
-}
-
-.activity__container {
-  max-width: 1050px;
-  margin: auto;
-}
-
 .activity__cardcontainer {
-  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
+  place-items: center;
+  gap: 30.5px;
   margin-top: 80px;
-  display: flex;
+  display: grid;
+  position: relative;
 }
 
 .leading_medicine {
@@ -183,10 +176,6 @@
   display: grid;
 }
 
-.joinus {
-  outline: 1px solid red;
-}
-
 .joinus__inputcontainer {
   width: 686px;
   margin: 80px auto auto;
@@ -203,6 +192,36 @@
 
 .footer {
   padding: 50px 195px;
+  display: flex;
+}
+
+.footer__gridcontainer {
+  width: 75%;
+  min-width: 150px;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  place-items: center;
+  gap: 30px;
+  display: grid;
+}
+
+.footer__contacts {
+  width: 25%;
+  min-width: 290px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__itemcontainer {
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+.footer__item, .footer__item--right {
+  margin-left: 10px;
 }
 
 .navbar {
@@ -547,6 +566,28 @@ li {
 .joinus__button {
   font-size: 14px;
   line-height: 28px;
+}
+
+.footer__title {
+  color: #252b42;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footer__item {
+  color: #737373;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footer__item--right {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .navbar__button {
