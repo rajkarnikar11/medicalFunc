@@ -1,12 +1,13 @@
+@use "../abstract/mixins" as *;
+
 .navbar {
 	max-width: 1044px;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
-	position: sticky;
-	top: 0;
-	z-index: 2;
 	height: 91px;
+	@include respond-to("tablet") {
+	}
 }
 .navbar__container {
 	display: flex;

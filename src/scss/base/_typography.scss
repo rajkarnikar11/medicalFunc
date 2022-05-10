@@ -1,4 +1,6 @@
 @use "../abstract/variables" as variable;
+@use "../abstract/mixins";
+
 * {
 	font-family: variable.$font;
 }
@@ -110,6 +112,9 @@ li {
 	margin: 10px 0;
 	margin: 10px 0;
 	width: 469px;
+	@include respond-to("mobile") {
+		max-width: 80%;
+	}
 }
 .description--center {
 	font-size: 14px;
@@ -301,6 +306,12 @@ li {
 	margin: 10px 0;
 }
 .footer__item--right {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: variable.$secondary-color;
+}
+.footer2 {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;

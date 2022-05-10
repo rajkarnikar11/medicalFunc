@@ -1,16 +1,23 @@
 @use "../abstract/variables" as variable;
+@use "../abstract/mixins" as *;
 
 .home__popup--square {
 	position: absolute;
 	right: 363px;
 	top: 122px;
 	z-index: 1;
+	@include respond-to("tablet") {
+		display: none;
+	}
 }
 .home__popup--rectangle {
 	position: absolute;
 	right: 184.5px;
 	bottom: 40;
 	z-index: 1;
+	@include respond-to("tablet") {
+		display: none;
+	}
 }
 .leading_medicine__popup--rectangle {
 	position: absolute;

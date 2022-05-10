@@ -1,9 +1,6 @@
 @use "../abstract/variables" as variable;
-@mixin button {
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
-}
+@use "../abstract/mixins" as *;
+
 .navbar__button {
 	width: 137px;
 	height: 52px;

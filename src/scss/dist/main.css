@@ -52,20 +52,13 @@
   justify-content: space-between;
 }
 
-.activity {
-  height: 100vh;
-  padding-top: 160px;
-}
-
-.activity__container {
-  max-width: 1050px;
-  margin: auto;
-}
-
 .activity__cardcontainer {
-  display: flex;
+  position: relative;
   margin-top: 80px;
-  justify-content: space-between;
+  display: grid;
+  place-items: center;
+  gap: 30.5px;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
 }
 
 .leading_medicine {
@@ -161,14 +154,99 @@
   margin-top: 10px;
 }
 
+.pricing__container {
+  height: 100%;
+  width: 100%;
+}
+
+.pricing__cardcontainer {
+  position: relative;
+  margin-top: 80px;
+  display: grid;
+  place-items: center;
+  gap: 30.5px;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
+}
+
+.client__cardcontainer {
+  margin-top: 80px;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(348px, 1fr));
+}
+
+.joinus__inputcontainer {
+  width: 686px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.joinus__inputtext {
+  width: 571px;
+  height: 58px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border-radius: 5px 0 0 5px;
+  margin-right: 0;
+}
+
+.footer {
+  padding: 50px 198px;
+  display: flex;
+  width: 100%;
+}
+
+.footer__gridcontainer {
+  width: 75%;
+  display: grid;
+  gap: 30px;
+  min-width: 150px;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+}
+
+.footer__contacts {
+  width: 25%;
+  min-width: 290px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__itemcontainer {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer__item,
+.footer__item--right {
+  margin-left: 10px;
+}
+
+.footer2 {
+  padding: 25px 198px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+}
+
+.footer2__socialicons {
+  margin: 0 10px;
+}
+
+.footer2__iconcontainer {
+  min-width: 140px;
+}
+
 .navbar {
   max-width: 1044px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 2;
   height: 91px;
 }
 
@@ -200,6 +278,14 @@
 
 * {
   font-family: "montserrat";
+}
+
+::placeholder {
+  color: #737373;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "montserrat";
+  padding-left: 20px;
 }
 
 li {
@@ -317,6 +403,16 @@ li {
   width: 469px;
 }
 
+.description--center {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  margin: 10px 0;
+  margin: 10px 0;
+  width: 469px;
+  margin: auto;
+}
+
 .activity__cardtitle {
   font-weight: 700;
   size: 16px;
@@ -420,6 +516,105 @@ li {
   color: #23a6f0;
 }
 
+.pricing__cardtitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #252b42;
+}
+
+.pricing__carddescription--bold {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pricing__price {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #23a6f0;
+}
+
+.pricing__pricedescription {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
+}
+
+.pricing__carddescription--regular {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
+.pricing__button {
+  font-weight: 700;
+  size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.pricing__listtext {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.client__carddescription {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #737373;
+}
+
+.client__designername {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
+}
+
+.joinus {
+  text-align: center;
+}
+
+.joinus__button {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252b42;
+}
+
+.footer__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #737373;
+  margin: 10px 0;
+}
+
+.footer__item--right {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.footer2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #737373;
+}
+
 .navbar__button {
   width: 137px;
   height: 52px;
@@ -479,6 +674,30 @@ li {
   justify-content: space-evenly;
   background-color: #ffffff;
   margin-top: 10px;
+}
+
+.pricing__button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  height: 52px;
+  width: 243px;
+  display: grid;
+  place-items: center;
+  background-color: #23a6f0;
+  border-radius: 5px;
+}
+
+.joinus__button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #23a6f0;
+  color: #ffffff;
+  height: 58px;
+  width: 110px;
+  border-radius: 0 5px 5px 0;
+  margin-left: 0;
 }
 
 * {
@@ -689,6 +908,105 @@ a {
 
 .specialize__salestext {
   margin-left: 10px;
+}
+
+.pricing__card {
+  height: 908px;
+  width: 323px;
+  padding: 50px 40.5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.pricing__card:nth-child(2)::after {
+  position: absolute;
+  content: "New";
+  background-color: #e77c40;
+  top: 0px;
+  right: 0;
+  transform: translateX(30%);
+  height: 90px;
+  width: 89px;
+  border-radius: 52px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+}
+
+.pricing__cardtitle {
+  margin-top: 35px;
+}
+
+.pricing__carddescription--bold {
+  width: 203px;
+  height: 48px;
+  margin-top: 35px;
+}
+
+.pricing__price {
+  margin-top: 35px;
+}
+
+.pricing__carddescription--regular {
+  width: 200px;
+  height: 60px;
+  margin-top: 35px;
+}
+
+.pricing__listcontainer {
+  margin-top: 19px;
+}
+
+.pricing__list {
+  margin-top: 19px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.pricing__listtext {
+  margin-left: 10px;
+}
+
+.client__card {
+  width: 348px;
+  height: 317px;
+  padding-top: 55px;
+}
+
+.client__starcontainer {
+  display: flex;
+  justify-content: space-between;
+  height: 22px;
+  width: 130px;
+  margin: auto;
+}
+
+.client__carddescription {
+  width: 159px;
+  height: 120px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.client__namecontainer {
+  display: flex;
+  height: 50px;
+  width: 159px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.client__image {
+  margin-right: 15px;
+}
+
+.client__designer {
+  font-size: 12px;
+  line-height: 16px;
+  color: #252b42;
 }
 
 .container {

@@ -1,12 +1,12 @@
 .footer {
-  padding: 50px 195px;
+  padding: 50px 198px;
   display: flex;
+  width: 100%;
 }
 
 .footer__gridcontainer {
   width: 75%;
   display: grid;
-  place-items: center;
   gap: 30px;
   min-width: 150px;
   grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));

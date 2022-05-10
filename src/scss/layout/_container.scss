@@ -1,3 +1,8 @@
+@use "../abstract/mixins" as *;
+
 .container {
 	padding: 160px 198px;
+	@include respond-to("mobile") {
+		padding: 160px 50px;
+	}
 }

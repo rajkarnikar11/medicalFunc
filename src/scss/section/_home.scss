@@ -1,3 +1,5 @@
+@use "../abstract/mixins" as *;
+
 .home {
 	height: calc(100vh - 91px);
 }
@@ -6,12 +8,43 @@
 	height: calc(100% - 160px);
 	float: right;
 	display: flex;
+
+	@include respond-to("mobile") {
+		width: calc(100% - 20px);
+	}
+	@include respond-to("tablet") {
+		width: calc(100% - 50px);
+	}
+	@include respond-to("laptop") {
+		width: calc(100% - 50px);
+	}
 }
 .home__herosection {
 	width: 50%;
 	margin-top: 50px;
 	height: 100%;
 	position: relative;
+
+	@include respond-to("laptop") {
+		width: 100%;
+	}
+	@include respond-to("tablet") {
+		width: 100%;
+	}
+
+	@include respond-to("mobile") {
+		width: 100%;
+	}
+}
+.home__description {
+	width: 520px;
+	@include respond-to("tablet") {
+		width: 80%;
+	}
+
+	@include respond-to("mobile") {
+		width: 100%;
+	}
 }
 .herosection__left {
 	display: flex;
@@ -22,10 +55,17 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: right;
-
 	position: relative;
 	// align-items: flex-end;
 	height: 588px;
+	@include respond-to("laptop") {
+	}
+	@include respond-to("tablet") {
+		max-width: 50%;
+	}
+	@include respond-to("mobile") {
+		display: none;
+	}
 }
 .home__image {
 	position: relative;
@@ -33,6 +73,12 @@
 
 	width: 441px;
 	height: 566px;
+	@include respond-to("laptop") {
+		max-width: 80%;
+	}
+	@include respond-to("tablet") {
+		margin-right: 0;
+	}
 }
 .home__buttoncontainer {
 	display: flex;

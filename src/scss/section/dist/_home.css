@@ -8,12 +8,56 @@
   float: right;
   display: flex;
 }
+@media (max-width: 767px) {
+  .home__container {
+    width: calc(100% - 20px);
+  }
+}
+@media (max-width: 992px) {
+  .home__container {
+    width: calc(100% - 50px);
+  }
+}
+@media (max-width: 1200px) {
+  .home__container {
+    width: calc(100% - 50px);
+  }
+}
 
 .home__herosection {
   width: 50%;
   margin-top: 50px;
   height: 100%;
   position: relative;
+}
+@media (max-width: 1200px) {
+  .home__herosection {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .home__herosection {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .home__herosection {
+    width: 100%;
+  }
+}
+
+.home__description {
+  width: 520px;
+}
+@media (max-width: 992px) {
+  .home__description {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .home__description {
+    width: 100%;
+  }
 }
 
 .herosection__left {
@@ -29,12 +73,32 @@
   position: relative;
   height: 588px;
 }
+@media (max-width: 992px) {
+  .herosection__right {
+    max-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .herosection__right {
+    display: none;
+  }
+}
 
 .home__image {
   position: relative;
   background-image: url(../assets/heroimage.png);
   width: 441px;
   height: 566px;
+}
+@media (max-width: 1200px) {
+  .home__image {
+    max-width: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .home__image {
+    margin-right: 0;
+  }
 }
 
 .home__buttoncontainer {
