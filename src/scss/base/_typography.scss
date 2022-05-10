@@ -1,5 +1,5 @@
 @use "../abstract/variables" as variable;
-@use "../abstract/mixins";
+@use "../abstract/mixins" as *;
 
 * {
 	font-family: variable.$font;
@@ -112,6 +112,7 @@ li {
 	margin: 10px 0;
 	margin: 10px 0;
 	width: 469px;
+
 	@include respond-to("mobile") {
 		max-width: 80%;
 	}
@@ -124,6 +125,7 @@ li {
 	margin: 10px 0;
 	width: 469px;
 	margin: auto;
+	max-width: 80%;
 }
 
 // our activity section

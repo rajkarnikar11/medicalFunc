@@ -1,7 +1,16 @@
 .footer {
   padding: 50px 198px;
-  display: flex;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 50px 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding: 50px 100px;
+  }
 }
 
 .footer__gridcontainer {
@@ -9,12 +18,7 @@
   display: grid;
   gap: 30px;
   min-width: 150px;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
-}
-
-.footer__contacts {
-  width: 25%;
-  min-width: 290px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 }
 
 .footer__title {
@@ -31,4 +35,8 @@
 .footer__item,
 .footer__item--right {
   margin-left: 10px;
+}
+
+.footer__column--right {
+  width: 290px;
 }

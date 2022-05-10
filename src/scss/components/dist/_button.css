@@ -79,6 +79,7 @@
   color: #ffffff;
   height: 58px;
   width: 110px;
+  max-width: 30%;
   border-radius: 0 5px 5px 0;
   margin-left: 0;
 }

@@ -58,13 +58,13 @@
 
 @media (max-width: 992px) {
   .home__description {
-    width: 80%;
+    max-width: 80%;
   }
 }
 
 @media (max-width: 767px) {
   .home__description {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -138,14 +138,10 @@
 }
 
 .leading_medicine {
-  height: 100vh;
   background-color: #ffdcd1;
 }
 
 .leading_medicine__container {
-  max-width: 1050px;
-  height: 100%;
-  margin: auto;
   display: flex;
 }
 
@@ -163,7 +159,22 @@
 }
 
 .leading_medicine__left {
-  margin-top: 290px;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 34px;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .leading_medicine__left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .leading_medicine__left {
+    width: 100%;
+  }
 }
 
 .leading_medicine__linkcontainer {
@@ -178,6 +189,12 @@
 .leading_medicine__right {
   display: flex;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .leading_medicine__right {
+    display: none;
+  }
 }
 
 .leading_medicine__testubeimage {
@@ -195,6 +212,12 @@
   background-repeat: no-repeat;
   margin-top: 160px;
   position: relative;
+}
+
+@media (max-width: 1200px) {
+  .leading_medicine__testubeimagecontainer {
+    max-width: 80%;
+  }
 }
 
 .leading_medicine__testubeimagecontainer:after {
@@ -254,11 +277,13 @@
 
 .joinus__inputcontainer {
   width: 686px;
+  max-width: 80%;
   margin: 80px auto auto;
 }
 
 .joinus__inputtext {
   width: 571px;
+  max-width: 60%;
   height: 58px;
   background-color: #f9f9f9;
   border: 1px solid #e6e6e6;
@@ -269,20 +294,26 @@
 .footer {
   width: 100%;
   padding: 50px 198px;
-  display: flex;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 50px 100px;
+  }
 }
 
 .footer__gridcontainer {
   width: 75%;
   min-width: 150px;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 30px;
   display: grid;
-}
-
-.footer__contacts {
-  width: 25%;
-  min-width: 290px;
 }
 
 .footer__title {
@@ -300,11 +331,30 @@
   margin-left: 10px;
 }
 
+.footer__column--right {
+  width: 290px;
+}
+
 .footer2 {
   background-color: #fafafa;
   justify-content: space-between;
   padding: 25px 198px;
   display: flex;
+}
+
+@media (max-width: 1200px) {
+  .footer2 {
+    padding: 160px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer2 {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
 }
 
 .footer2__socialicons {
@@ -315,12 +365,39 @@
   min-width: 140px;
 }
 
+@media (max-width: 767px) {
+  .footer2__iconcontainer {
+    margin-top: 20px;
+  }
+}
+
 .navbar {
   max-width: 1044px;
   height: 91px;
+  outline: 1px solid red;
   justify-content: space-between;
   margin: auto;
   display: flex;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    max-width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    max-width: 90%;
+  }
 }
 
 .navbar__container {
@@ -333,6 +410,12 @@
   display: flex;
 }
 
+@media (max-width: 992px) {
+  .navbar__left {
+    flex-direction: column;
+  }
+}
+
 .navbar__listcontainer {
   width: 275px;
   justify-content: space-between;
@@ -340,13 +423,42 @@
   display: flex;
 }
 
+@media (max-width: 992px) {
+  .navbar__listcontainer {
+    outline: 1px solid #639;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
 .navbar__list {
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .navbar__list {
+    text-align: center;
+    margin: 5px;
+  }
 }
 
 .navbar__right {
   width: 300px;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .navbar__right {
+    outline: 1px solid #00f;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar__logo {
+    background-color: #0ff;
+    margin-top: 20px;
+  }
 }
 
 * {
@@ -475,9 +587,16 @@ li {
   line-height: 20px;
 }
 
+@media (max-width: 767px) {
+  .description {
+    max-width: 80%;
+  }
+}
+
 .description--center {
   color: #737373;
   width: 469px;
+  max-width: 80%;
   margin: auto;
   font-size: 14px;
   line-height: 20px;
@@ -751,6 +870,7 @@ li {
   color: #fff;
   height: 58px;
   width: 110px;
+  max-width: 30%;
   background-color: #23a6f0;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -879,10 +999,22 @@ a {
   left: 78px;
 }
 
+@media (max-width: 992px) {
+  .leading_medicine__popup--rectangle {
+    display: none;
+  }
+}
+
 .leading_medicine__popup--square {
   position: absolute;
   top: 48px;
   left: 282px;
+}
+
+@media (max-width: 992px) {
+  .leading_medicine__popup--square {
+    display: none;
+  }
 }
 
 .specialize__sale {
@@ -1116,6 +1248,12 @@ a {
 
 .container {
   padding: 160px 198px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 160px 100px;
+  }
 }
 
 @media (max-width: 767px) {

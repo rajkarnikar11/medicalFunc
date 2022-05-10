@@ -29,11 +29,21 @@
   height: 110px;
   width: 362px;
 }
+@media (max-width: 992px) {
+  .leading_medicine__popup--rectangle {
+    display: none;
+  }
+}
 
 .leading_medicine__popup--square {
   position: absolute;
   left: 282px;
   top: 48px;
+}
+@media (max-width: 992px) {
+  .leading_medicine__popup--square {
+    display: none;
+  }
 }
 
 .specialize__sale {

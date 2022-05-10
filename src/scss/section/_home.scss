@@ -39,11 +39,11 @@
 .home__description {
 	width: 520px;
 	@include respond-to("tablet") {
-		width: 80%;
+		max-width: 80%;
 	}
 
 	@include respond-to("mobile") {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 .herosection__left {

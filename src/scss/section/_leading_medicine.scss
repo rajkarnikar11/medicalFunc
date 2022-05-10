@@ -1,13 +1,10 @@
 @use "../abstract/variables" as variable;
+@use "../abstract/mixins" as *;
 
 .leading_medicine {
-	height: 100vh;
 	background-color: variable.$faded-secondary-color-2;
 }
 .leading_medicine__container {
-	max-width: 1050px;
-	height: 100%;
-	margin: auto;
 	display: flex;
 }
 
@@ -27,7 +24,16 @@
 	width: 50%;
 }
 .leading_medicine__left {
-	margin-top: 290px;
+	margin-top: 34px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@include respond-to("tablet") {
+		width: 100%;
+	}
+	@include respond-to("mobile") {
+		width: 100%;
+	}
 }
 .leading_medicine__linkcontainer {
 	display: flex;
@@ -40,6 +46,13 @@
 .leading_medicine__right {
 	position: relative;
 	display: flex;
+	@include respond-to("laptop") {
+	}
+	@include respond-to("tablet") {
+	}
+	@include respond-to("mobile") {
+		display: none;
+	}
 }
 .leading_medicine__testubeimage {
 	position: absolute;
@@ -55,6 +68,9 @@
 	background-image: url(../assets/rectangularbackground.svg);
 	background-repeat: no-repeat;
 	background-position: bottom;
+	@include respond-to("laptop") {
+		max-width: 80%;
+	}
 
 	&::after {
 		content: " ";

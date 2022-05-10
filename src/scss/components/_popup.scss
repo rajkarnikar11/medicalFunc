@@ -27,11 +27,17 @@
 
 	height: 110px;
 	width: 362px;
+	@include respond-to("tablet") {
+		display: none;
+	}
 }
 .leading_medicine__popup--square {
 	position: absolute;
 	left: 282px;
 	top: 48px;
+	@include respond-to("tablet") {
+		display: none;
+	}
 }
 //specialize
 

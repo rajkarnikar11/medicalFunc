@@ -6,7 +6,17 @@
 	display: flex;
 	justify-content: space-between;
 	height: 91px;
+	outline: 1px solid red;
 	@include respond-to("tablet") {
+		max-width: 80%;
+		flex-direction: column;
+		align-items: center;
+	}
+	@include respond-to("laptop") {
+		max-width: 80%;
+	}
+	@include respond-to("mobile") {
+		max-width: 90%;
 	}
 }
 .navbar__container {
@@ -16,6 +26,9 @@
 .navbar__left {
 	display: flex;
 	justify-content: space-between;
+	@include respond-to("tablet") {
+		flex-direction: column;
+	}
 }
 
 .navbar__listcontainer {
@@ -23,14 +36,31 @@
 	margin-left: 50px;
 	width: 275px;
 	justify-content: space-between;
+	@include respond-to("tablet") {
+		flex-direction: column;
+		outline: 1px solid rebeccapurple;
+		margin: auto;
+	}
 }
 .navbar__list {
 	cursor: pointer;
+	@include respond-to("tablet") {
+		margin: 5px;
+		text-align: center;
+	}
 }
 .navbar__right {
 	display: flex;
 	// border: 1px solid red;
 	width: 300px;
+	@include respond-to("mobile") {
+		outline: 1px solid blue;
+		flex-direction: column;
+	}
 }
-.navbar__login {
+.navbar__logo {
+	@include respond-to("tablet") {
+		background-color: aqua;
+		margin-top: 20px;
+	}
 }

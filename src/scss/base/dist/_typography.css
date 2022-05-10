@@ -124,6 +124,11 @@ li {
   margin: 10px 0;
   width: 469px;
 }
+@media (max-width: 767px) {
+  .description {
+    max-width: 80%;
+  }
+}
 
 .description--center {
   font-size: 14px;
@@ -133,6 +138,7 @@ li {
   margin: 10px 0;
   width: 469px;
   margin: auto;
+  max-width: 80%;
 }
 
 .activity__cardtitle {
