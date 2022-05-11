@@ -7,7 +7,12 @@
 }
 body {
 	position: relative;
+	max-width: 1440px;
+	margin: auto;
 }
 a {
 	cursor: pointer;
+}
+li {
+	list-style: none;
 }

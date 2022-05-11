@@ -1,18 +1,77 @@
+@use "../abstract/variables" as variable;
+
 .specialize__container {
 	height: 100%;
 	width: 100%;
 }
-.specialize__cardcontainer {
+.specialize__card-container {
 	margin-top: 80px;
 	display: grid;
 	place-items: center;
 	gap: 10px;
-	grid-template-columns: repeat(auto-fill, (minmax(348px, 1fr)));
+	grid-template-columns: repeat(auto-fill, (minmax(340px, 1fr)));
 }
-.specialize__infocontainer {
+.specialize__info-container {
 	display: flex;
 	height: 46px;
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 10px;
+}
+.specialize__sale {
+	font-size: 14px;
+	font-weight: bold;
+	color: variable.$light-text-color;
+}
+.specialize__department-text {
+	color: variable.$primary-color;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+}
+.specialize__rating {
+	font-size: 12px;
+	line-height: 16px;
+	color: variable.$light-text-color;
+}
+.specialize__card-title {
+	font-size: 16px;
+	line-height: 24px;
+	color: variable.$text-color;
+}
+.specialize__card-description {
+	font-size: 14px;
+	line-height: 20px;
+	color: variable.$secondary-color;
+}
+.specialize__sales-text {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	color: variable.$secondary-color;
+}
+.specialize__price-grey {
+	font-size: 16px;
+	line-height: 24px;
+	color: variable.$muted-color;
+	font-weight: 700;
+}
+.specialize__price-green {
+	font-size: 16px;
+	line-height: 24px;
+	color: variable.$secondary-color-1;
+	font-weight: 700;
+}
+.specialize__info {
+	font-size: 12px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	color: variable.$secondary-color;
+}
+.specialize__button-rectangle {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	color: variable.$primary-color;
 }

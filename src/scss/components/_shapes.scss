@@ -1,15 +1,16 @@
 @use "../abstract/variables" as variable;
 @use "../abstract/mixins" as *;
-.home__shape--topleft {
+.home__shape-topleft {
 	height: 177px;
 	width: 112px;
 	background-color: variable.$faded-primary-color;
 	position: absolute;
 	top: 0px;
 	border-radius: 0 0 50% 0;
+	left: 0;
 	z-index: -1;
 }
-.home__shape--topright {
+.home__shape-topright {
 	height: 700px;
 	width: 604px;
 	background-color: variable.$faded-primary-color;
@@ -26,7 +27,7 @@
 		display: none;
 	}
 }
-.home__shape--lightblue {
+.home__shape-lightblue {
 	height: 70px;
 	width: 70px;
 	background: #e2f6ff;
@@ -38,7 +39,7 @@
 		display: none;
 	}
 }
-.home__shape--pink {
+.home__shape-pink {
 	background-color: #ffdce0;
 	height: 76px;
 	width: 45px;

@@ -1,11 +1,32 @@
 @use "../abstract/mixins" as *;
 
 .container {
-	padding: 160px 198px;
+	max-width: 1045px;
+	margin: auto;
 	@include respond-to("laptop") {
-		padding: 160px 100px;
+		max-width: 1000px;
+		margin: auto;
+	}
+	@include respond-to("tablet") {
+		max-width: 667px;
+		margin: auto;
 	}
 	@include respond-to("mobile") {
-		padding: 160px 50px;
+		max-width: 400px;
+		margin: auto;
 	}
+}
+.activity__container,
+.leading-medicine__container,
+.specialize__container,
+.pricing__container,
+.client__container,
+.joinus__container {
+	padding: 160px 0;
+}
+.footer__container {
+	padding: 50px 0;
+}
+.footer2__container {
+	padding: 25px 0;
 }

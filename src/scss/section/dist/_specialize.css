@@ -3,18 +3,85 @@
   width: 100%;
 }
 
-.specialize__cardcontainer {
+.specialize__card-container {
   margin-top: 80px;
   display: grid;
   place-items: center;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(348px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 }
 
-.specialize__infocontainer {
+.specialize__info-container {
   display: flex;
   height: 46px;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+}
+
+.specialize__sale {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.specialize__department-text {
+  color: #23a6f0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.specialize__rating {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.specialize__card-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #252b42;
+}
+
+.specialize__card-description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
+.specialize__sales-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.specialize__price-grey {
+  font-size: 16px;
+  line-height: 24px;
+  color: #bdbdbd;
+  font-weight: 700;
+}
+
+.specialize__price-green {
+  font-size: 16px;
+  line-height: 24px;
+  color: #40bb15;
+  font-weight: 700;
+}
+
+.specialize__info {
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #737373;
+}
+
+.specialize__button-rectangle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
 }

@@ -1,24 +1,35 @@
 @use "../abstract/mixins" as *;
+@use "../abstract/variables" as variable;
 
 .footer2 {
-	padding: 25px 198px;
+	// padding: 25px 198px;
 	display: flex;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: variable.$secondary-color;
 	justify-content: space-between;
 	background-color: #fafafa;
 	@include respond-to("laptop") {
-		padding: 160px 100px;
+		// padding: 160px 100px;
 	}
 	@include respond-to("mobile") {
-		padding: 50px 50px;
+		// padding: 50px 50px;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 	}
 }
-.footer2__socialicons {
+.footer2__social-icons {
 	margin: 0 10px;
+	cursor: pointer;
+
+	&:hover > img {
+		transform: translateY(-5px);
+		transition-duration: 0.2s;
+	}
 }
-.footer2__iconcontainer {
+.footer2__icon-container {
 	min-width: 140px;
 	@include respond-to("mobile") {
 		margin-top: 20px;

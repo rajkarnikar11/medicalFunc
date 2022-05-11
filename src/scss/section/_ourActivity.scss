@@ -1,8 +1,20 @@
-.activity__cardcontainer {
+@use "../abstract/variables" as variable;
+
+.activity__card-container {
 	position: relative;
 	margin-top: 80px;
 	display: grid;
 	place-items: center;
 	gap: 30.5px;
 	grid-template-columns: repeat(auto-fill, (minmax(328px, 1fr)));
+}
+.activity__card-title {
+	font-weight: 700;
+	size: 16px;
+	line-height: 24px;
+}
+.activity__card-description {
+	color: variable.$secondary-color;
+	font-size: 14px;
+	line-height: 20px;
 }

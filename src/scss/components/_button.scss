@@ -15,23 +15,40 @@
 	align-items: center;
 	@include button();
 }
-.home__button--primary {
+.home__button-primary {
 	@include button();
 	background-color: variable.$primary-color;
 	height: 52px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 22px;
+	color: variable.$light-text-color;
+	margin-right: 10px;
 	width: 193px;
+	&:hover {
+		transform: translateY(-5px);
+		transition-duration: 0.3s;
+	}
 }
-.home__button--white {
+.home__button-white {
 	@include button();
 	width: 162px;
 	height: 52px;
 	border: 1px solid variable.$primary-color;
 	background-color: variable.$light-text-color;
+	font-weight: 700;
+	font-size: 14px;
+	color: variable.$primary-color;
+
+	&:hover {
+		transform: translateY(-5px);
+		transition-duration: 0.3s;
+	}
 }
 
 //speciaize section
 
-.specialize__button--circle {
+.specialize__button-circle {
 	@include button();
 	height: 40px;
 	width: 40px;
@@ -41,7 +58,7 @@
 	place-items: center;
 	margin: 0px 5px;
 }
-.specialize__button--rectangle {
+.specialize__button-rectangle {
 	@include button();
 	height: 44px;
 	width: 141.14px;
@@ -64,6 +81,8 @@
 }
 .joinus__button {
 	@include button();
+	font-size: 14px;
+	line-height: 28px;
 	background-color: variable.$primary-color;
 	color: variable.$light-text-color;
 	height: 58px;

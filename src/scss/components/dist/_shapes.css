@@ -1,14 +1,15 @@
-.home__shape--topleft {
+.home__shape-topleft {
   height: 177px;
   width: 112px;
   background-color: #b2e3ff;
   position: absolute;
   top: 0px;
   border-radius: 0 0 50% 0;
+  left: 0;
   z-index: -1;
 }
 
-.home__shape--topright {
+.home__shape-topright {
   height: 700px;
   width: 604px;
   background-color: #b2e3ff;
@@ -19,34 +20,34 @@
   border-radius: 0 0 0 100px;
 }
 @media (max-width: 992px) {
-  .home__shape--topright {
+  .home__shape-topright {
     max-width: 50%;
   }
 }
 @media (max-width: 767px) {
-  .home__shape--topright {
+  .home__shape-topright {
     display: none;
   }
 }
 
-.home__shape--lightblue {
+.home__shape-lightblue {
   height: 70px;
   width: 70px;
   background: #e2f6ff;
   border-radius: 0 100% 0 0;
 }
 @media (max-width: 1200px) {
-  .home__shape--lightblue {
+  .home__shape-lightblue {
     display: none;
   }
 }
 @media (max-width: 992px) {
-  .home__shape--lightblue {
+  .home__shape-lightblue {
     display: none;
   }
 }
 
-.home__shape--pink {
+.home__shape-pink {
   background-color: #ffdce0;
   height: 76px;
   width: 45px;
@@ -54,12 +55,12 @@
   border-radius: 0 75 75 0;
 }
 @media (max-width: 1200px) {
-  .home__shape--pink {
+  .home__shape-pink {
     display: none;
   }
 }
 @media (max-width: 992px) {
-  .home__shape--pink {
+  .home__shape-pink {
     display: none;
   }
 }

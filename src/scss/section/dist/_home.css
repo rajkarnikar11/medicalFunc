@@ -1,5 +1,7 @@
 .home {
   height: calc(100vh - 91px);
+  max-width: 1308px;
+  margin: auto;
 }
 
 .home__container {
@@ -22,6 +24,13 @@
   .home__container {
     width: calc(100% - 50px);
   }
+}
+
+.home__welcome {
+  font-size: 16px;
+  line-height: 24px;
+  color: #23a6f0;
+  font-weight: 700;
 }
 
 .home__herosection {
@@ -47,7 +56,12 @@
 }
 
 .home__description {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #737373;
   width: 520px;
+  margin-top: 30px;
 }
 @media (max-width: 992px) {
   .home__description {
@@ -84,6 +98,20 @@
   }
 }
 
+.home__title {
+  color: #252b42;
+  font-size: 58px;
+  line-height: 80px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .home__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
 .home__image {
   position: relative;
   background-image: url(../assets/heroimage.png);
@@ -101,12 +129,12 @@
   }
 }
 
-.home__buttoncontainer {
+.home__button-container {
   display: flex;
   margin-top: 30px;
 }
 
-.home__shapecontainer {
+.home__shape-container {
   width: 86px;
   margin-top: 0;
   padding-left: 10px;

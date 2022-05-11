@@ -15,16 +15,25 @@
   cursor: pointer;
 }
 
-.home__button--primary {
+.home__button-primary {
   border-radius: 5px;
   border: none;
   cursor: pointer;
   background-color: #23a6f0;
   height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-right: 10px;
   width: 193px;
 }
+.home__button-primary:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+}
 
-.home__button--white {
+.home__button-white {
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -32,9 +41,16 @@
   height: 52px;
   border: 1px solid #23a6f0;
   background-color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  color: #23a6f0;
+}
+.home__button-white:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
 }
 
-.specialize__button--circle {
+.specialize__button-circle {
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -47,7 +63,7 @@
   margin: 0px 5px;
 }
 
-.specialize__button--rectangle {
+.specialize__button-rectangle {
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -78,6 +94,8 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 28px;
   background-color: #23a6f0;
   color: #ffffff;
   height: 58px;

@@ -23,7 +23,7 @@
   }
 }
 
-.navbar__burgercontainer {
+.navbar__burger-container {
   height: 35px;
   width: 50px;
   position: absolute;
@@ -33,14 +33,14 @@
   display: none;
 }
 @media (max-width: 992px) {
-  .navbar__burgercontainer {
+  .navbar__burger-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 }
 
-.navbar__burgerline {
+.navbar__burger-line {
   height: 3px;
   border-radius: 5px;
   width: 100%;
@@ -54,6 +54,7 @@
 
 .navbar__left {
   display: flex;
+  color: #737373;
   justify-content: space-between;
 }
 @media (max-width: 992px) {
@@ -62,14 +63,14 @@
   }
 }
 
-.navbar__listcontainer {
+.navbar__list-container {
   display: flex;
   margin-left: 50px;
   width: 275px;
   justify-content: space-between;
 }
 @media (max-width: 992px) {
-  .navbar__listcontainer {
+  .navbar__list-container {
     flex-direction: column;
     margin: auto;
     width: 80vw;
@@ -77,7 +78,7 @@
   }
 }
 
-.navbar__listcontainer--small {
+.navbar__list-container-small {
   display: flex;
   margin-left: 50px;
   width: 275px;
@@ -85,7 +86,7 @@
   justify-content: space-between;
 }
 @media (max-width: 992px) {
-  .navbar__listcontainer--small {
+  .navbar__list-container-small {
     flex-direction: column;
     margin: auto;
     width: 80vw;
@@ -96,6 +97,8 @@
 .navbar__list {
   cursor: pointer;
   position: relative;
+  font-weight: 700;
+  font-size: 14px;
 }
 .navbar__list::before {
   content: " ";
@@ -151,26 +154,42 @@
   }
 }
 
-.navbar__right--small {
+.navbar__right-small {
   display: flex;
   width: 300px;
   display: none;
 }
 @media (max-width: 992px) {
-  .navbar__right--small {
+  .navbar__right-small {
     flex-direction: column;
     width: 80vw;
   }
 }
 
+.navbar__logo {
+  color: #252b42;
+  font-weight: 700;
+  font-size: 24px;
+}
 @media (max-width: 992px) {
   .navbar__logo {
     margin-top: 20px;
   }
 }
 
+.navbar__login {
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 700;
+}
 @media (max-width: 992px) {
   .navbar__login {
     margin: 5px;
   }
+}
+
+.navbar__button {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
 }

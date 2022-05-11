@@ -1,14 +1,19 @@
 @use "../abstract/variables" as variable;
 @use "../abstract/mixins" as *;
 
-.leading_medicine {
+.leading-medicine {
 	background-color: variable.$faded-secondary-color-2;
 }
-.leading_medicine__container {
+.leading-medicine__container {
 	display: flex;
 }
 
-.leading_medicine__title {
+.leading-medicine__title {
+	position: relative;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	color: variable.$text-color;
 	&:before {
 		position: absolute;
 		top: -35px;
@@ -19,11 +24,11 @@
 	}
 }
 
-.leading_medicine__left,
-.leading_medicine__right {
+.leading-medicine__left,
+.leading-medicine__right {
 	width: 50%;
 }
-.leading_medicine__left {
+.leading-medicine__left {
 	margin-top: 34px;
 	display: flex;
 	flex-direction: column;
@@ -35,7 +40,13 @@
 		width: 100%;
 	}
 }
-.leading_medicine__linkcontainer {
+.leading-medicine__link-text {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: variable.$primary-color;
+}
+.leading-medicine__link-container {
 	display: flex;
 	margin-top: 35px;
 	width: 101px;
@@ -43,7 +54,7 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.leading_medicine__right {
+.leading-medicine__right {
 	position: relative;
 	display: flex;
 	@include respond-to("laptop") {
@@ -54,13 +65,13 @@
 		display: none;
 	}
 }
-.leading_medicine__testubeimage {
+.leading-medicine__testube-image {
 	position: absolute;
 	right: -82px;
 	object-fit: contain;
 	overflow: hidden;
 }
-.leading_medicine__testubeimagecontainer {
+.leading-medicine__testube-image-container {
 	position: relative;
 	height: 396px;
 	width: 338px;
@@ -83,4 +94,12 @@
 		z-index: 1;
 		border-radius: 100px 100px 0 0;
 	}
+}
+.leading-medicine__description {
+	width: 351px;
+	height: 60px;
+	font-size: 14px;
+	line-height: 20px;
+	color: variable.$secondary-color;
+	margin-top: 35px;
 }

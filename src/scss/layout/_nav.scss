@@ -20,7 +20,7 @@
 		max-width: 90%;
 	}
 }
-.navbar__burgercontainer {
+.navbar__burger-container {
 	height: 35px;
 	width: 50px;
 	position: absolute;
@@ -35,7 +35,7 @@
 	}
 }
 
-.navbar__burgerline {
+.navbar__burger-line {
 	height: 3px;
 	border-radius: 5px;
 	width: 100%;
@@ -47,13 +47,14 @@
 }
 .navbar__left {
 	display: flex;
+	color: variable.$secondary-color;
 	justify-content: space-between;
 	@include respond-to("tablet") {
 		flex-direction: column;
 	}
 }
 
-.navbar__listcontainer {
+.navbar__list-container {
 	display: flex;
 	margin-left: 50px;
 	width: 275px;
@@ -66,7 +67,7 @@
 		display: none;
 	}
 }
-.navbar__listcontainer--small {
+.navbar__list-container-small {
 	display: flex;
 	margin-left: 50px;
 	width: 275px;
@@ -83,6 +84,8 @@
 .navbar__list {
 	cursor: pointer;
 	position: relative;
+	font-weight: 700;
+	font-size: 14px;
 
 	&::before {
 		content: " ";
@@ -134,7 +137,7 @@
 		display: none;
 	}
 }
-.navbar__right--small {
+.navbar__right-small {
 	display: flex;
 	// border: 1px solid red;
 	width: 300px;
@@ -145,12 +148,23 @@
 	}
 }
 .navbar__logo {
+	color: variable.$text-color;
+	font-weight: 700;
+	font-size: 24px;
 	@include respond-to("tablet") {
 		margin-top: 20px;
 	}
 }
 .navbar__login {
+	color: variable.$primary-color;
+	font-size: 14px;
+	font-weight: 700;
 	@include respond-to("tablet") {
 		margin: 5px;
 	}
+}
+.navbar__button {
+	color: variable.$light-text-color;
+	font-size: 14px;
+	font-weight: 700;
 }

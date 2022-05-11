@@ -1,12 +1,19 @@
-.leading_medicine {
+.leading-medicine {
   background-color: #ffdcd1;
 }
 
-.leading_medicine__container {
+.leading-medicine__container {
   display: flex;
 }
 
-.leading_medicine__title:before {
+.leading-medicine__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #252b42;
+}
+.leading-medicine__title:before {
   position: absolute;
   top: -35px;
   content: " ";
@@ -15,29 +22,36 @@
   background-color: #e74040;
 }
 
-.leading_medicine__left,
-.leading_medicine__right {
+.leading-medicine__left,
+.leading-medicine__right {
   width: 50%;
 }
 
-.leading_medicine__left {
+.leading-medicine__left {
   margin-top: 34px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (max-width: 992px) {
-  .leading_medicine__left {
+  .leading-medicine__left {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .leading_medicine__left {
+  .leading-medicine__left {
     width: 100%;
   }
 }
 
-.leading_medicine__linkcontainer {
+.leading-medicine__link-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23a6f0;
+}
+
+.leading-medicine__link-container {
   display: flex;
   margin-top: 35px;
   width: 101px;
@@ -46,24 +60,24 @@
   align-items: center;
 }
 
-.leading_medicine__right {
+.leading-medicine__right {
   position: relative;
   display: flex;
 }
 @media (max-width: 767px) {
-  .leading_medicine__right {
+  .leading-medicine__right {
     display: none;
   }
 }
 
-.leading_medicine__testubeimage {
+.leading-medicine__testube-image {
   position: absolute;
   right: -82px;
   object-fit: contain;
   overflow: hidden;
 }
 
-.leading_medicine__testubeimagecontainer {
+.leading-medicine__testube-image-container {
   position: relative;
   height: 396px;
   width: 338px;
@@ -73,11 +87,11 @@
   background-position: bottom;
 }
 @media (max-width: 1200px) {
-  .leading_medicine__testubeimagecontainer {
+  .leading-medicine__testube-image-container {
     max-width: 80%;
   }
 }
-.leading_medicine__testubeimagecontainer::after {
+.leading-medicine__testube-image-container::after {
   content: " ";
   position: absolute;
   bottom: 0;
@@ -87,4 +101,13 @@
   background-color: #fef3d9;
   z-index: 1;
   border-radius: 100px 100px 0 0;
+}
+
+.leading-medicine__description {
+  width: 351px;
+  height: 60px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  margin-top: 35px;
 }

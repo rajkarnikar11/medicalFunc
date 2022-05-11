@@ -1,11 +1,11 @@
-.joinus__inputcontainer {
+.joinus__input-container {
   width: 686px;
   margin: auto;
   margin-top: 80px;
   max-width: 80%;
 }
 
-.joinus__inputtext {
+.joinus__input-text {
   width: 571px;
   max-width: 60%;
   height: 58px;
@@ -14,4 +14,8 @@
   background-color: #f9f9f9;
   border-radius: 5px 0 0 5px;
   margin-right: 0;
+}
+
+.joinus {
+  text-align: center;
 }

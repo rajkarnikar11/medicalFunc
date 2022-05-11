@@ -4,17 +4,17 @@
   box-shadow: 0px 13px 19px 0px #00000012;
 }
 
-.activity__cardimage {
+.activity__card-image {
   margin-top: 40px;
   margin-left: 42.5px;
 }
 
-.activity__cardtitle {
+.activity__card-title {
   margin-left: 42.5px;
   margin-top: 25px;
   position: relative;
 }
-.activity__cardtitle:after {
+.activity__card-title:after {
   position: absolute;
   bottom: -20px;
   content: " ";
@@ -24,7 +24,7 @@
   background-color: #e74040;
 }
 
-.activity__carddescription {
+.activity__card-description {
   margin-left: 42.5px;
   margin-top: 40px;
   width: 132px;
@@ -37,55 +37,40 @@
   width: 348px;
 }
 
-.specialize__imagecontainer--first {
+.specialize__image-container {
   height: 300px;
   width: 348px;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: 348px 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.specialize__image-container--first {
   background-image: url("../assets/specialize1.png");
-  background-repeat: no-repeat;
-  background-size: 348px 300px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
-
-.specialize__imagecontainer--second {
-  height: 300px;
-  width: 348px;
-  position: relative;
+.specialize__image-container--first {
+  background-image: url("../assets/specialize1.png");
+}
+.specialize__image-container--second {
   background-image: url("../assets/specialize2.png");
-  background-repeat: no-repeat;
-  background-size: 348px 300px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
-
-.specialize__imagecontainer--third {
-  height: 300px;
-  width: 348px;
-  position: relative;
+.specialize__image-container--third {
   background-image: url("../assets/specialize3.png");
-  background-repeat: no-repeat;
-  background-size: 348px 300px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.specialize__buttoncontainer {
+.specialize__button-container {
   display: flex;
   justify-content: center;
 }
 
-.specialize__textcontainer {
+.specialize__text-container {
   padding: 25px;
 }
 
-.specialize__departmentcontainer {
+.specialize__department-container {
   display: flex;
   justify-content: space-between;
 }
@@ -101,20 +86,20 @@
   padding: 5.5px;
 }
 
-.specialize__cardtitle {
+.specialize__card-title {
   margin-top: 11px;
 }
 
-.specialize__carddescription {
+.specialize__card-description {
   width: 280px;
   height: 60px;
 }
 
-.specialize__salescontainer {
+.specialize__sales-container {
   margin-top: 14px;
 }
 
-.specialize__salestext {
+.specialize__sales-text {
   margin-left: 10px;
 }
 
@@ -143,11 +128,11 @@
   color: #ffffff;
 }
 
-.pricing__cardtitle {
+.pricing__card-title {
   margin-top: 35px;
 }
 
-.pricing__carddescription--bold {
+.pricing__card-description-bold {
   width: 203px;
   height: 48px;
   margin-top: 35px;
@@ -157,13 +142,13 @@
   margin-top: 35px;
 }
 
-.pricing__carddescription--regular {
+.pricing__card-description-regular {
   width: 200px;
   height: 60px;
   margin-top: 35px;
 }
 
-.pricing__listcontainer {
+.pricing__list-container {
   margin-top: 19px;
 }
 
@@ -174,7 +159,7 @@
   align-items: center;
 }
 
-.pricing__listtext {
+.pricing__list-text {
   margin-left: 10px;
 }
 
@@ -184,7 +169,7 @@
   padding-top: 55px;
 }
 
-.client__starcontainer {
+.client__star-container {
   display: flex;
   justify-content: space-between;
   height: 22px;
@@ -192,14 +177,14 @@
   margin: auto;
 }
 
-.client__carddescription {
+.client__card-description {
   width: 159px;
   height: 120px;
   margin: auto;
   margin-top: 15px;
 }
 
-.client__namecontainer {
+.client__name-container {
   display: flex;
   height: 50px;
   width: 159px;
