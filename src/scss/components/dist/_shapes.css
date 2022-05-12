@@ -1,6 +1,6 @@
 .home__shape-topleft {
   height: 177px;
-  width: 112px;
+  width: 7.5vw;
   background-color: #b2e3ff;
   position: absolute;
   top: 0px;
@@ -11,7 +11,7 @@
 
 .home__shape-topright {
   height: 700px;
-  width: 604px;
+  width: 50vw;
   background-color: #b2e3ff;
   position: absolute;
   z-index: -1;

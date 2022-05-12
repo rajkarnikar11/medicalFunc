@@ -4,14 +4,16 @@
 	"description": "",
 	"source": "./src/index.html",
 	"scripts": {
-		"dev": "parcel ./src/index.html",
-		"build": "parcel index.html"
+		"start": "parcel ./src/index.html",
+		"build": "parcel build ./src/index.html",
+		"dev": "parcel ./src/index.html"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/rajkarnikar11/medicalFunc.git"
 	},
 	"keywords": [],
+	"type": "module",
 	"author": "",
 	"license": "ISC",
 	"bugs": {
@@ -20,7 +22,13 @@
 	"homepage": "https://github.com/rajkarnikar11/medicalFunc#readme",
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.5.0",
-		"parcel": "^2.5.0",
+		"cssnano": "^5.1.7",
+		"node-sass": "^7.0.1",
+		"parcel-bundler": "^1.12.5",
+		"postcss": "^8.4.13",
 		"sass": "^1.51.0"
+	},
+	"dependencies": {
+		"parcel": "^2.5.0"
 	}
 }
