@@ -4,13 +4,16 @@
 .activity__card-container {
 	position: relative;
 	margin-top: 80px;
-	display: grid;
-	place-items: center;
+	display: flex;
+	align-items: center;
 	gap: 30.5px;
-
-	grid-template-columns: repeat(auto-fill, (minmax(328px, 1fr)));
+	justify-content: center;
 	@include respond-to("tablet") {
-		gap: 20.5px;
+		gap: 15px;
+		padding: 0 30px;
+	}
+	@include respond-to("mobile") {
+		flex-direction: column;
 	}
 }
 .activity__card-title {

@@ -3,15 +3,12 @@
 
 .client__card-container {
 	margin-top: 80px;
-	display: grid;
-	text-align: center;
+	display: flex;
+	place-items: center;
+	// text-align: center;
 	gap: 10px;
-	grid-template-columns: repeat(auto-fill, (minmax(340px, 1fr)));
-	@include respond-to("laptop") {
-		grid-template-columns: repeat(auto-fill, (minmax(300px, 1fr)));
-	}
-	@include respond-to("laptop") {
-		grid-template-columns: repeat(auto-fill, (minmax(200px, 1fr)));
+	@include respond-to("mobile") {
+		flex-direction: column;
 	}
 }
 .client__card-description {

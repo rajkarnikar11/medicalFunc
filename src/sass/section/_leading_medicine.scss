@@ -13,8 +13,10 @@
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 50px;
-	padding-left: 10px;
 	color: variable.$text-color;
+	@include respond-to("tablet") {
+		padding: 0 30px;
+	}
 	&:before {
 		position: absolute;
 		top: -35px;
@@ -46,12 +48,15 @@
 	font-size: 14px;
 	line-height: 24px;
 	color: variable.$primary-color;
-	padding-left: 20px;
+
 	transition-duration: 0.8s;
+	@include respond-to("tablet") {
+		padding: 0 30px;
+	}
 }
 .leading-medicine__link-container {
 	display: flex;
-	width: 130px;
+	width: 155px;
 	height: 24px;
 	justify-content: space-between;
 	transition-duration: 0.8s;

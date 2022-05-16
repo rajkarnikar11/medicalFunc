@@ -170,14 +170,20 @@
 .activity__card-container {
   position: relative;
   margin-top: 80px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
   gap: 30.5px;
-  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
+  justify-content: center;
 }
 @media (max-width: 992px) {
   .activity__card-container {
-    gap: 20.5px;
+    gap: 15px;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .activity__card-container {
+    flex-direction: column;
   }
 }
 
@@ -206,8 +212,12 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  padding-left: 10px;
   color: #252b42;
+}
+@media (max-width: 992px) {
+  .leading-medicine__title {
+    padding: 0 30px;
+  }
 }
 .leading-medicine__title:before {
   position: absolute;
@@ -244,13 +254,17 @@
   font-size: 14px;
   line-height: 24px;
   color: #23a6f0;
-  padding-left: 20px;
   transition-duration: 0.8s;
+}
+@media (max-width: 992px) {
+  .leading-medicine__link-text {
+    padding: 0 30px;
+  }
 }
 
 .leading-medicine__link-container {
   display: flex;
-  width: 130px;
+  width: 155px;
   height: 24px;
   justify-content: space-between;
   transition-duration: 0.8s;
@@ -319,17 +333,18 @@
   margin-top: 35px;
 }
 
-.specialize__container {
-  height: 100%;
-  width: 100%;
-}
-
 .specialize__card-container {
   margin-top: 80px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+}
+@media (max-width: 992px) {
+  .specialize__card-container {
+    padding: 0 30px;
+    flex-direction: column;
+  }
 }
 
 .specialize__info-container {
@@ -407,6 +422,12 @@
   color: #23a6f0;
 }
 
+@media (max-width: 1120px) {
+  .specialize__card-container {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+}
 .pricing__container {
   height: 100%;
   width: 100%;
@@ -415,10 +436,16 @@
 .pricing__card-container {
   position: relative;
   margin-top: 80px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30.5px;
-  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
+}
+@media (max-width: 1200px) {
+  .pricing__card-container {
+    gap: 20.5px;
+    padding: 30px;
+  }
 }
 
 .pricing__card-title {
@@ -470,21 +497,20 @@
   font-weight: 700;
 }
 
-.client__card-container {
-  margin-top: 80px;
-  display: grid;
-  text-align: center;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-}
-@media (max-width: 1200px) {
-  .client__card-container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+@media (max-width: 1100px) {
+  .pricing__card-container {
+    flex-direction: column;
   }
 }
-@media (max-width: 1200px) {
+.client__card-container {
+  margin-top: 80px;
+  display: flex;
+  place-items: center;
+  gap: 10px;
+}
+@media (max-width: 767px) {
   .client__card-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    flex-direction: column;
   }
 }
 
@@ -584,7 +610,7 @@
 
 .footer__column,
 .footer__column-right {
-  margin-left: 10px;
+  padding: 0 30px;
 }
 
 .footer__column-right {
@@ -885,7 +911,11 @@
   line-height: 24px;
   color: #23a6f0;
   margin: 10px 0;
-  padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .practice-advice {
+    padding: 0 30px;
+  }
 }
 
 .title {
@@ -894,7 +924,11 @@
   line-height: 50px;
   color: #252b42;
   margin-top: 10px;
-  padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .title {
+    padding: 0 30px;
+  }
 }
 
 .description {
@@ -905,11 +939,10 @@
   margin: 10px 0;
   width: 469px;
   font-weight: 500;
-  padding-left: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .description {
-    max-width: 80%;
+    padding: 0 30px;
   }
 }
 
@@ -921,9 +954,28 @@
   margin: auto;
   margin-top: 10px;
   font-weight: 500;
-  max-width: 80%;
+}
+@media (max-width: 767px) {
+  .description-center {
+    max-width: 80vw;
+  }
+}
+@media (max-width: 992px) {
+  .description-center {
+    padding: 0 30px;
+  }
 }
 
+@media (max-width: 1120px) {
+  .description-center,
+.description,
+.title,
+.practice-advice,
+.leading-medicine__link-text {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+}
 .navbar__button {
   border-radius: 5px;
   border: none;
@@ -1570,24 +1622,6 @@ li {
 .container {
   max-width: 1045px;
   margin: auto;
-}
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1000px;
-    margin: auto;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 667px;
-    margin: auto;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: 380px;
-    margin: auto;
-  }
 }
 
 .leading-medicine__container,
