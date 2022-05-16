@@ -47,13 +47,25 @@
 	line-height: 24px;
 	color: variable.$primary-color;
 	padding-left: 20px;
+	transition-duration: 0.8s;
 }
 .leading-medicine__link-container {
 	display: flex;
 	width: 130px;
 	height: 24px;
 	justify-content: space-between;
+	transition-duration: 0.8s;
 	align-items: center;
+	transition-timing-function: linear;
+	&:hover {
+		transform: scale(1.1);
+	}
+	&:hover .leading-medicine__link-text {
+		transform: translateX(20%);
+	}
+	&:hover .leading-medicine__link-image {
+		display: none;
+	}
 }
 .leading-medicine__right {
 	position: relative;

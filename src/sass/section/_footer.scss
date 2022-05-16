@@ -9,7 +9,7 @@
 	width: 75%;
 	display: grid;
 	gap: 30px;
-	min-width: 130px;
+	min-width: 150px;
 	grid-template-columns: repeat(auto-fill, (minmax(130px, 1fr)));
 }
 
@@ -31,7 +31,11 @@
 	font-size: 14px;
 	line-height: 24px;
 	color: variable.$secondary-color;
-	margin: 10px 0;
+	margin-top: 10px;
+
+	min-width: 150px;
+	text-align: left;
+	outline: 1px solid re;
 }
 .footer__item-right {
 	font-weight: 700;
@@ -39,11 +43,13 @@
 	line-height: 24px;
 	color: variable.$secondary-color;
 }
-.footer__item,
+
 .footer__item-right {
 	margin-left: 10px;
 }
 
 .footer__column-right {
 	width: 290px;
+}
+.footer__column {
 }
