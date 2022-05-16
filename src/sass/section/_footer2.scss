@@ -4,9 +4,6 @@
 .footer2__container {
 	color: variable.$secondary-color;
 	background-color: #fafafa;
-
-	width: 100vw;
-	outline: 1px soid red;
 }
 .footer2 {
 	// padding: 25px 198px;
@@ -17,6 +14,9 @@
 	justify-content: space-between;
 	@include respond-to("laptop") {
 		// padding: 160px 100px;
+	}
+	@include respond-to("tablet") {
+		padding: 0 30px;
 	}
 	@include respond-to("mobile") {
 		// padding: 50px 50px;

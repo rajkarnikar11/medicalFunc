@@ -37,7 +37,7 @@
 
 	height: 110px;
 	width: 362px;
-	@include respond-to("tablet") {
+	@include respond-to("laptop") {
 		display: none;
 	}
 }
@@ -45,7 +45,7 @@
 	position: absolute;
 	left: 282px;
 	top: 48px;
-	@include respond-to("tablet") {
+	@include respond-to("laptop") {
 		display: none;
 	}
 }

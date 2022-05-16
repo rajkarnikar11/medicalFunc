@@ -8,7 +8,7 @@
 	align-items: center;
 	gap: 30.5px;
 	justify-content: center;
-	@include respond-to("tablet") {
+	@include respond-to("laptop") {
 		gap: 15px;
 		padding: 0 30px;
 	}

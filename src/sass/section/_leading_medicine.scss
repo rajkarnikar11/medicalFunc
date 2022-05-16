@@ -2,6 +2,7 @@
 @use "../abstract/mixins" as *;
 
 .leading-medicine {
+	box-sizing: border-box;
 	background-color: variable.$faded-secondary-color-2;
 }
 .leading-medicine__container {
@@ -36,11 +37,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
+	z-index: 1;
 	@include respond-to("tablet") {
-		width: 100%;
 	}
 	@include respond-to("mobile") {
-		width: 100%;
 	}
 }
 .leading-medicine__link-text {
@@ -98,7 +99,7 @@
 	background-repeat: no-repeat;
 	background-position: bottom;
 	@include respond-to("laptop") {
-		max-width: 80%;
+		margin-right: 30px;
 	}
 
 	&::after {

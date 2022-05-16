@@ -5,16 +5,13 @@
 	// height: calc(100vh - 91px);
 	max-width: 1308px;
 	margin: auto;
-	width: 90vw;
 	// @include respond-to("mobile") {
 	// 	width: calc(100% - 20px);
 	// }
 	// @include respond-to("tablet") {
 	// 	width: calc(100% - 50px);
 	// }
-	@include respond-to("laptop") {
-		max-width: 80vw;
-	}
+	padding: 0 30px;
 }
 .home__container {
 	display: flex;
@@ -127,6 +124,9 @@
 	object-fit: cover;
 	width: 440px;
 	height: 566px;
+	@include respond-to("tablet") {
+		display: none;
+	}
 }
 .home__button-container {
 	display: flex;
