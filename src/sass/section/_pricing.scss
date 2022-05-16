@@ -23,6 +23,7 @@
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 24px;
+	color: variable.$secondary-color;
 }
 .pricing__price {
 	font-weight: 700;
@@ -34,11 +35,12 @@
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
-	color: variable.$primary-color;
+	color: variable.$disabled-element-color;
 }
 .pricing__card-description-regular {
 	font-size: 14px;
 	line-height: 20px;
+	font-weight: 500;
 	color: variable.$secondary-color;
 }
 .pricing__button {

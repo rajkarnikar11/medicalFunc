@@ -1,4 +1,5 @@
 @use "../abstract/variables" as variable;
+@use "../abstract/mixins" as *;
 
 .specialize__container {
 	height: 100%;
@@ -8,7 +9,7 @@
 	margin-top: 80px;
 	display: grid;
 	place-items: center;
-	gap: 10px;
+	gap: 12px;
 	grid-template-columns: repeat(auto-fill, (minmax(340px, 1fr)));
 }
 .specialize__info-container {

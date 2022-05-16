@@ -4,7 +4,7 @@
 .home__popup-square {
 	position: absolute;
 	right: 363px;
-	top: 122px;
+	top: 110px;
 	z-index: 1;
 	@include respond-to("tablet") {
 		display: none;
@@ -19,11 +19,14 @@
 
 .home__popup-rectangle {
 	position: absolute;
-	right: 184.5px;
+	transform: translateX(-30%);
 	bottom: 0px;
 	z-index: 1;
 	@include respond-to("tablet") {
 		display: none;
+	}
+	@include respond-to("laptop") {
+		transform: translateX(-15%);
 	}
 }
 .leading-medicine__popup-rectangle {

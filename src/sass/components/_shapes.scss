@@ -9,19 +9,23 @@
 	border-radius: 0 0 50% 0;
 	left: 0;
 	z-index: -1;
+	@include respond-to("tablet") {
+		width: 20vw;
+	}
 }
 .home__shape-topright {
 	height: 700px;
-	width: 50vw;
+	width: 48vw;
 	background-color: variable.$faded-primary-color;
 	position: absolute;
 	z-index: -1;
 	top: 0;
 	right: 0;
+	overflow-x: hidden;
 
 	border-radius: 0 0 0 100px;
 	@include respond-to("tablet") {
-		max-width: 50%;
+		width: 42vw;
 	}
 	@include respond-to("mobile") {
 		display: none;
@@ -44,7 +48,7 @@
 	height: 76px;
 	width: 45px;
 	margin-bottom: 21.5px;
-	border-radius: 0 75 75 0;
+	border-radius: 0 75px 75px 0;
 	@include respond-to("laptop") {
 		display: none;
 	}

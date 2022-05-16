@@ -13,6 +13,9 @@
 		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +51,7 @@
 			<div class="navbar__container navbar__right">
 				<a class="navbar__login">Login</a>
 				<button class="navbar__button">
-					<span> join us </span>
+					<span class="button__joinus"> join us </span>
 					<span>
 						<img
 							src="./assets/arrow.svg"
@@ -92,28 +95,39 @@
 						discover your most beauiful smile
 					</p>
 					<div class="home__button-container">
-						<button class=" home__button-primary">
-							Get Quote Now
-						</button>
-						<button class="home__button-white">Learn More</button>
+						
+							<button class=" home__button-primary">
+								<div class="button-primary__container">
+									<div class="button-primary__front">Get Quote Now</div>
+									<div class="button-primary__back">Get Quote Now</div>							
+								</div>			
+							</button>
+							<button class=" home__button-white">
+								<div class="button-white__container">
+									<div class="button-white__front">Learn More</div>
+									<div class="button-white__back">Learn More</div>							
+								</div>			
+							</button>
+						
 					</div>
 				</div>
 				<div class="home__herosection herosection__right">
-					<div class="home__image">
+					<div class="home__image-container">
+						<img src="./assets/heroimage.png" alt="doctor's image" width="440px" class="home__image" height="566px">
 						<div class="home__popup-square">
 							<img
 								src="./assets/squarePopup.png"
 								alt="rectangle"
-								height="219px"
-								width="219spx"
+								height="250x"
+								width="250px"
 							/>
 						</div>
 						<div class="home__popup-rectangle">
 							<img
 								src="./assets/rectanglepopUp.png"
 								alt="rectangle"
-								height="112px"
-								width="371px"
+								height="127px"
+								width="423px"
 							/>
 						</div>
 					</div>
@@ -127,7 +141,7 @@
 
 		<!-- activity -->
 
-		<section id="our_activity " class="activity">
+		<section id="our_activity  " class="activity">
 			<div class="activity__container container">
 				<h6 class="activity__practice-advice practice-advice">Practice Advice</h6>
 				<h3 class="activity__title title">Our Activity</h3>
@@ -191,12 +205,8 @@
 					</p>
 					<a class="leading-medicine__link-container">
 						<p class="leading-medicine__link-text">Learn More</p>
-						<img
-							src="../src/assets/angulararrow.svg"
-							alt="arrow"
-							height="16px"
-							width="8.62px"
-						/>
+						<img src="./assets/angulararrow.svg" alt="arrow"
+/>
 					</a>
 				</div>
 				<div class="leading-medicine__right">
@@ -208,8 +218,15 @@
 							width="377px"
 							alt="testube"
 						></img>
-						<img class="leading-medicine__popup-rectangle" height="110px" width="362px" src="../src/assets/rectanglepopUp.png"></img>	
-						<img class="leading-medicine__popup-square" height="158px" width="158px" src="../src/assets/squarePopup.png"></img>	
+						<img class="leading-medicine__popup-rectangle" 
+								height="127px"
+								width="423px" 
+								src="./assets/rectanglepopUp.png"
+						>
+						<img class="leading-medicine__popup-square"
+						 	height="250x"
+							width="250px"
+						  	src="./assets/squarePopup.png">	
 					</div>
 				</div>
 			</div>
@@ -285,23 +302,23 @@
 								</span>
 							</div>
 							<div class="specialize__info-container">
-								<div class="specialize__info">
+								<div class="specialize__info-container">
 									<span>
 										<img  src="./assets/clock.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>22hr 30mins</span>
+									<span class="specialize__info">22hr 30mins</span>
 								</div>
 								<div class="specialize__info">
 									<span>
 										<img src="./assets/lessons.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>64 Lessons</span>
+									<span class="specialize__info">64 Lessons</span>
 								</div>
 								<div class="specialize__info">
 									<span>
 										<img src="./assets/progess.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>Progess</span>
+									<span class="specialize__info">Progess</span>
 								</div>
 							</div>
 							<button class="specialize__button-rectangle">
@@ -367,19 +384,19 @@
 									<span>
 										<img  src="./assets/clock.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>22hr 30mins</span>
+									<span class="specialize__info">22hr 30mins</span>
 								</div>
 								<div class="specialize__info">
 									<span>
 										<img src="./assets/lessons.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>64 Lessons</span>
+									<span class="specialize__info">64 Lessons</span>
 								</div>
 								<div class="specialize__info">
 									<span>
 										<img src="./assets/progess.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>Progess</span>
+									<span class="specialize__info">Progess</span>
 								</div>
 							</div>
 							<button class="specialize__button-rectangle">
@@ -445,19 +462,19 @@
 									<span>
 										<img  src="./assets/clock.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>22hr 30mins</span>
+									<span class="specialize__info">22hr 30mins</span>
 								</div>
 								<div class="specialize__info">
 									<span>
 										<img src="./assets/lessons.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>64 Lessons</span>
+									<span class="specialize__info">64 Lessons</span>
 								</div>
 								<div class="specialize__info">
 									<span>
 										<img src="./assets/progess.svg" height="16px" width="16px" alt="time"></img>
 									</span>
-									<span>Progess</span>
+									<span class="specialize__info">Progess</span>
 								</div>
 							</div>
 							<button class="specialize__button-rectangle">
@@ -805,6 +822,9 @@
 			</div>
 
 		</section>
+
+		<!-- footer -->
+
 		<footer id="footer " class="footer footer__container container" >
 			<div class="footer__grid-container">
 				<div class="footer__column">

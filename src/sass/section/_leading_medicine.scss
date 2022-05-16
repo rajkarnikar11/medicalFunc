@@ -13,6 +13,7 @@
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 50px;
+	padding-left: 10px;
 	color: variable.$text-color;
 	&:before {
 		position: absolute;
@@ -29,7 +30,7 @@
 	width: 50%;
 }
 .leading-medicine__left {
-	margin-top: 34px;
+	// margin-top: 34px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -45,11 +46,11 @@
 	font-size: 14px;
 	line-height: 24px;
 	color: variable.$primary-color;
+	padding-left: 20px;
 }
 .leading-medicine__link-container {
 	display: flex;
-	margin-top: 35px;
-	width: 101px;
+	width: 130px;
 	height: 24px;
 	justify-content: space-between;
 	align-items: center;
@@ -75,7 +76,7 @@
 	position: relative;
 	height: 396px;
 	width: 338px;
-	margin-top: 160px;
+	margin-top: 0px;
 	background-image: url(../assets/rectangularbackground.svg);
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -101,5 +102,6 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: variable.$secondary-color;
+
 	margin-top: 35px;
 }

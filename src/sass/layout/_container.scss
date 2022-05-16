@@ -12,17 +12,24 @@
 		margin: auto;
 	}
 	@include respond-to("mobile") {
-		max-width: 400px;
+		max-width: 380px;
 		margin: auto;
 	}
 }
-.activity__container,
+
 .leading-medicine__container,
 .specialize__container,
 .pricing__container,
 .client__container,
+.activity__container,
 .joinus__container {
 	padding: 160px 0;
+	@include respond-to("laptop") {
+	}
+	@include respond-to("tablet") {
+	}
+	@include respond-to("mobile") {
+	}
 }
 .footer__container {
 	padding: 50px 0;

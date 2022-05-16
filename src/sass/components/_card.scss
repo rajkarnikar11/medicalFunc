@@ -1,4 +1,5 @@
 @use "../abstract/variables" as variable;
+@use "../abstract/mixins" as *;
 
 // activity section
 
@@ -6,6 +7,7 @@
 	// padding: 40px 42.5px;
 	height: 288px;
 	width: 328px;
+
 	box-shadow: 0px 13px 19px 0px #00000012;
 }
 .activity__card-image {
@@ -92,6 +94,8 @@
 .specialize__card-description {
 	width: 280px;
 	height: 60px;
+	font-weight: 500;
+	margin-top: 10px;
 }
 .specialize__sales-container {
 	margin-top: 14px;
@@ -99,14 +103,23 @@
 .specialize__sales-text {
 	margin-left: 10px;
 }
-
+.specialize__price-container {
+	margin-top: 15px;
+}
+.specialize__info-container {
+}
+.specialize__info {
+	margin-left: 5px;
+	font-weight: 500;
+}
 //pricing
 
 .pricing__card {
 	height: 908px;
 	width: 323px;
 	padding: 50px 40.5px;
-	box-shadow: 0px 5px 10px rgba(black, 0.3);
+	box-shadow: 0px 13px 19px 0px #00000012;
+
 	position: relative;
 	&:nth-child(2)::after {
 		position: absolute;
@@ -114,7 +127,7 @@
 		background-color: variable.$alert_color;
 		top: 0px;
 		right: 0;
-		transform: translateX(30%);
+		transform: translate(30%, -30%);
 		height: 90px;
 		width: 89px;
 		border-radius: 52px;
@@ -175,6 +188,7 @@
 	height: 120px;
 	margin: auto;
 	margin-top: 15px;
+	font-weight: 500;
 }
 .client__name-container {
 	display: flex;

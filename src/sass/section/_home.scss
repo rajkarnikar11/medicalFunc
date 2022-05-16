@@ -5,12 +5,22 @@
 	// height: calc(100vh - 91px);
 	max-width: 1308px;
 	margin: auto;
+	width: 90vw;
+	// @include respond-to("mobile") {
+	// 	width: calc(100% - 20px);
+	// }
+	// @include respond-to("tablet") {
+	// 	width: calc(100% - 50px);
+	// }
+	@include respond-to("laptop") {
+		max-width: 80vw;
+	}
 }
 .home__container {
-	width: calc(100% - 132px);
-	height: calc(100% - 160px);
-	float: right;
 	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	margin: auto;
 
 	@include respond-to("mobile") {
 		width: calc(100% - 20px);
@@ -19,7 +29,7 @@
 		width: calc(100% - 50px);
 	}
 	@include respond-to("laptop") {
-		width: calc(100% - 50px);
+		justify-content: unset;
 	}
 }
 .home__welcome {
@@ -29,13 +39,12 @@
 	font-weight: 700;
 }
 .home__herosection {
-	width: 50%;
 	margin-top: 50px;
 	height: 100%;
-	position: relative;
 
 	@include respond-to("laptop") {
 		width: 100%;
+		max-width: 45vw;
 	}
 	@include respond-to("tablet") {
 		width: 100%;
@@ -48,10 +57,15 @@
 .home__description {
 	font-size: 20px;
 	line-height: 30px;
-	font-weight: 400;
+	font-weight: 500;
+
 	color: variable.$secondary-color;
+
 	width: 520px;
 	margin-top: 30px;
+	@include respond-to("laptop") {
+		max-width: 45vw;
+	}
 	@include respond-to("tablet") {
 		max-width: 80%;
 	}
@@ -64,18 +78,21 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding-top: 148px;
 }
 .herosection__right {
 	display: flex;
 	flex-direction: row;
-	justify-content: right;
 	position: relative;
+
+	justify-content: flex-end;
+
 	// align-items: flex-end;
 	height: 588px;
 	@include respond-to("laptop") {
 	}
 	@include respond-to("tablet") {
-		max-width: 50%;
+		max-width: 50vw;
 	}
 	@include respond-to("mobile") {
 		display: none;
@@ -92,18 +109,24 @@
 		line-height: 50px;
 	}
 }
-.home__image {
+.home__image-container {
 	position: relative;
-	background-image: url(../assets/heroimage.png);
-
 	width: 441px;
 	height: 566px;
 	@include respond-to("laptop") {
-		max-width: 80%;
+		max-width: 45vw;
+		position: absolute;
+		left: 0;
+		z-index: -1;
 	}
 	@include respond-to("tablet") {
-		margin-right: 0;
+		max-width: 80%;
 	}
+}
+.home__image {
+	object-fit: cover;
+	width: 440px;
+	height: 566px;
 }
 .home__button-container {
 	display: flex;
@@ -117,4 +140,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	@include respond-to("tablet") {
+		display: none;
+	}
 }
