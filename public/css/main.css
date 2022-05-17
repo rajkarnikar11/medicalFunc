@@ -194,7 +194,7 @@
 @media (max-width: 400px) {
   .activity__card-container {
     gap: 15px;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
@@ -278,7 +278,7 @@
 }
 @media (max-width: 400px) {
   .leading-medicine__link-text {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
@@ -298,7 +298,7 @@
 }
 @media (max-width: 400px) {
   .leading-medicine__link-container {
-    width: 120px;
+    width: 132px;
   }
 }
 .leading-medicine__link-container:hover {
@@ -374,6 +374,7 @@
   .specialize__card-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
   }
 }
 
@@ -533,6 +534,7 @@
 @media (max-width: 1126px) {
   .pricing__card-container {
     flex-direction: column;
+    padding: 0 10px;
   }
 }
 
@@ -1065,7 +1067,7 @@
 }
 @media (max-width: 400px) {
   .practice-advice {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
@@ -1083,7 +1085,7 @@
 }
 @media (max-width: 400px) {
   .title {
-    padding: 0 10px;
+    padding: 0 20px;
     max-width: 280px;
   }
 }
@@ -1104,7 +1106,7 @@
 }
 @media (max-width: 400px) {
   .description {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
@@ -1577,6 +1579,7 @@ li {
   height: 288px;
   width: 31.4%;
   box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.0705882353);
+  padding: 5px;
 }
 @media (max-width: 767px) {
   .activity__card {
@@ -1836,7 +1839,6 @@ li {
 
 .pricing__card-description-regular {
   width: 200px;
-  height: 60px;
   margin-top: 35px;
 }
 @media (max-width: 1126px) {
