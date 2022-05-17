@@ -16,6 +16,11 @@
 		gap: 20.5px;
 		padding: 30px;
 	}
+	@include respond-to("tablet") {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
 }
 .pricing__card-title {
 	text-transform: uppercase;
@@ -23,30 +28,61 @@
 	font-size: 24px;
 	line-height: 32px;
 	color: variable.$text-color;
+	@include respond-to("tablet") {
+		font-size: 50px;
+	}
+	@include respond-to("mobile") {
+		font-size: 24px;
+	}
 }
 .pricing__card-description-bold {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 24px;
 	color: variable.$secondary-color;
+	@include respond-to("tablet") {
+		font-size: 18px;
+	}
 }
 .pricing__price {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 50px;
 	color: variable.$primary-color;
+	@include respond-to("tablet") {
+		font-size: 60px;
+	}
+	@include respond-to("mobile") {
+		font-size: 40px;
+	}
 }
 .pricing__price-description {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
 	color: variable.$disabled-element-color;
+	@include respond-to("tablet") {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	@include respond-to("mobile") {
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
 .pricing__card-description-regular {
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 500;
 	color: variable.$secondary-color;
+	@include respond-to("tablet") {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	@include respond-to("mobile") {
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
 .pricing__button {
 	font-weight: 700;
@@ -58,9 +94,4 @@
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
-}
-@media (max-width: 1100px) {
-	.pricing__card-container {
-		flex-direction: column;
-	}
 }

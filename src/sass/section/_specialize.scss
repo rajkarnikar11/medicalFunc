@@ -9,6 +9,9 @@
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
+	@include respond-to("laptop") {
+		gap: 5px;
+	}
 	@include respond-to("tablet") {
 		padding: 0 30px;
 		flex-direction: column;
@@ -31,39 +34,75 @@
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 24px;
+	@include respond-to("mobile") {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	@include respond-to("tablet") {
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
 .specialize__rating {
 	font-size: 12px;
 	line-height: 16px;
 	color: variable.$light-text-color;
+	@include respond-to("tablet") {
+		font-size: 14px;
+		line-height: 20px;
+	}
 }
 .specialize__card-title {
 	font-size: 16px;
 	line-height: 24px;
 	color: variable.$text-color;
+	@include respond-to("mobile") {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	@include respond-to("tablet") {
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
 .specialize__card-description {
 	font-size: 14px;
 	line-height: 20px;
 	color: variable.$secondary-color;
+	@include respond-to("tablet") {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 .specialize__sales-text {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 24px;
 	color: variable.$secondary-color;
+	@include respond-to("tablet") {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 .specialize__price-grey {
 	font-size: 16px;
 	line-height: 24px;
 	color: variable.$muted-color;
 	font-weight: 700;
+	@include respond-to("tablet") {
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
 .specialize__price-green {
 	font-size: 16px;
 	line-height: 24px;
 	color: variable.$secondary-color-1;
 	font-weight: 700;
+	@include respond-to("tablet") {
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
 .specialize__info {
 	font-size: 12px;
@@ -71,6 +110,14 @@
 	display: flex;
 	align-items: center;
 	color: variable.$secondary-color;
+	@include respond-to("tablet") {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	@include respond-to("mobile") {
+		font-size: 12px;
+		line-height: 16px;
+	}
 }
 .specialize__button-rectangle {
 	font-weight: bold;
@@ -78,9 +125,39 @@
 	line-height: 24px;
 	color: variable.$primary-color;
 }
-@media (max-width: 1120px) {
-	.specialize__card-container {
-		padding: 0 30px;
-		flex-direction: column;
-	}
-}
+// @media (max-width: 1120px) {
+// 	.specialize__card-container {
+// 		padding: 0 30px;
+// 		flex-direction: column;
+// 	}
+// 	.specialize__department-text {
+// 		font-size: 20px;
+// 		line-height: 30px;
+// 	}
+// 	.specialize__card-title {
+// 		font-size: 24px;
+// 		line-height: 30px;
+// 	}
+// 	.specialize__card-description {
+// 		font-size: 20px;
+// 		line-height: 24px;
+// 	}
+// 	.specialize__sales-text {
+// 		font-weight: bold;
+// 		font-size: 16px;
+// 		line-height: 28px;
+// 		color: variable.$secondary-color;
+// 	}
+// 	.specialize__price-grey {
+// 		font-size: 20px;
+// 		line-height: 28px;
+// 	}
+// 	.specialize__price-green {
+// 		font-size: 20px;
+// 		line-height: 28px;
+// 	}
+// 	.specialize__info {
+// 		font-size: 14px;
+// 		line-height: 18px;
+// 	}
+// }

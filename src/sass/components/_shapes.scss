@@ -25,7 +25,7 @@
 
 	border-radius: 0 0 0 100px;
 	@include respond-to("tablet") {
-		width: 42vw;
+		display: none;
 	}
 	@include respond-to("mobile") {
 		display: none;

@@ -60,11 +60,11 @@
 
 	width: 520px;
 	margin-top: 30px;
-	@include respond-to("laptop") {
-		max-width: 45vw;
-	}
 	@include respond-to("tablet") {
 		max-width: 80%;
+	}
+	@include respond-to("laptop") {
+		max-width: 80vw;
 	}
 
 	@include respond-to("mobile") {

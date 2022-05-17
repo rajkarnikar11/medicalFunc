@@ -41,6 +41,14 @@
 .specialize__card {
 	height: 678px;
 	width: 348px;
+	@include respond-to("tablet") {
+		height: 1200px;
+		width: 696px;
+	}
+	@include respond-to("mobile") {
+		height: 678px;
+		width: 348px;
+	}
 }
 .specialize__image-container {
 	height: 300px;
@@ -53,12 +61,21 @@
 	flex-direction: column;
 	justify-content: space-between;
 
+	@include respond-to("tablet") {
+		height: 600px;
+		width: 696px;
+		background-size: 696px 600px;
+	}
+	@include respond-to("mobile") {
+		height: 300px;
+		width: 348px;
+		background-size: 348px 300px;
+	}
+
 	&--first {
 		background-image: url("../assets/specialize1.png");
 	}
-	&--first {
-		background-image: url("../assets/specialize1.png");
-	}
+
 	&--second {
 		background-image: url("../assets/specialize2.png");
 	}
@@ -86,7 +103,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5.5px;
+	padding: 6px;
 }
 .specialize__card-title {
 	margin-top: 11px;
@@ -107,6 +124,12 @@
 	margin-top: 15px;
 }
 .specialize__info-container {
+	@include respond-to("tablet") {
+		width: 70%;
+	}
+	@include respond-to("mobile") {
+		width: 100%;
+	}
 }
 .specialize__info {
 	margin-left: 5px;
@@ -119,6 +142,12 @@
 	width: 323px;
 	padding: 50px 40.5px;
 	box-shadow: 0px 13px 19px 0px #00000012;
+	@include respond-to("tablet") {
+		width: 600px;
+	}
+	@include respond-to("mobile") {
+		width: 323px;
+	}
 
 	position: relative;
 	&:nth-child(2)::after {
@@ -137,6 +166,21 @@
 		display: grid;
 		place-items: center;
 		color: variable.$light-text-color;
+
+		@include respond-to("laptop") {
+			height: 70px;
+			width: 69px;
+		}
+		@include respond-to("tablet") {
+			height: 90px;
+			width: 89px;
+		}
+
+		@include respond-to("mobile") {
+			height: 55px;
+			width: 55px;
+			font-size: 16px;
+		}
 	}
 }
 .pricing__card-title {
@@ -144,8 +188,14 @@
 }
 .pricing__card-description-bold {
 	width: 203px;
-	height: 48px;
+
 	margin-top: 35px;
+	@include respond-to("tablet") {
+		width: 400px;
+	}
+	@include respond-to("mobile") {
+		width: 203px;
+	}
 }
 .pricing__price {
 	margin-top: 35px;
@@ -154,9 +204,22 @@
 	width: 200px;
 	height: 60px;
 	margin-top: 35px;
+	@include respond-to("tablet") {
+		width: 500px;
+	}
+	@include respond-to("mobile") {
+		width: 200px;
+	}
 }
 .pricing__list-container {
-	margin-top: 19px;
+	@include respond-to("tablet") {
+		padding-top: 20px;
+		width: 60%;
+		margin: auto;
+	}
+	@include respond-to("mobile") {
+		width: 100%;
+	}
 }
 .pricing__list {
 	margin-top: 19px;
