@@ -3,18 +3,6 @@
 .container {
 	max-width: 1045px;
 	margin: auto;
-	// @include respond-to("laptop") {
-	// 	max-width: 1000px;
-	// 	margin: auto;
-	// }
-	// @include respond-to("tablet") {
-	// 	max-width: 667px;
-	// 	margin: auto;
-	// }
-	// @include respond-to("mobile") {
-	// 	max-width: 380px;
-	// 	margin: auto;
-	// }
 }
 
 .leading-medicine__container,
@@ -23,13 +11,7 @@
 .client__container,
 .activity__container,
 .joinus__container {
-	padding: 160px 0;
-	@include respond-to("laptop") {
-	}
-	@include respond-to("tablet") {
-	}
-	@include respond-to("mobile") {
-	}
+	padding: 160px 0px;
 }
 .footer__container {
 	padding: 50px 0;

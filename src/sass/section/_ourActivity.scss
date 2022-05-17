@@ -15,6 +15,10 @@
 	@include respond-to("mobile") {
 		flex-direction: column;
 	}
+	@include respond-to("small") {
+		gap: 15px;
+		padding: 0 10px;
+	}
 }
 .activity__card-title {
 	font-weight: 700;

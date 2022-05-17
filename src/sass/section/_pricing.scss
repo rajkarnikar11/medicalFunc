@@ -7,19 +7,13 @@
 }
 .pricing__card-container {
 	position: relative;
-	margin-top: 80px;
+	margin-top: 100px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	gap: 30.5px;
-	@include respond-to("laptop") {
-		gap: 20.5px;
-		padding: 30px;
-	}
+
 	@include respond-to("tablet") {
-		display: flex;
 		flex-direction: column;
-		gap: 50px;
 	}
 }
 .pricing__card-title {
@@ -74,6 +68,7 @@
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 500;
+	max-width: 100%;
 	color: variable.$secondary-color;
 	@include respond-to("tablet") {
 		font-size: 18px;

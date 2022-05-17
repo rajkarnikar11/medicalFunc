@@ -205,7 +205,7 @@
 	width: 243px;
 	display: grid;
 	place-items: center;
-
+	max-width: 100%;
 	background-color: variable.$primary-color;
 	border-radius: 5px;
 	transition-duration: 0.3s;

@@ -2,31 +2,24 @@
 @use "../abstract/variables" as variable;
 
 .home {
-	// height: calc(100vh - 91px);
 	max-width: 1308px;
 	margin: auto;
-	// @include respond-to("mobile") {
-	// 	width: calc(100% - 20px);
-	// }
-	// @include respond-to("tablet") {
-	// 	width: calc(100% - 50px);
-	// }
-	padding: 0 30px;
-}
-.home__container {
-	display: flex;
-	margin: auto;
-	justify-content: space-between;
-	margin: auto;
+	padding: 0 40px;
 
-	@include respond-to("mobile") {
-		width: calc(100% - 20px);
-	}
 	@include respond-to("tablet") {
-		width: calc(100% - 50px);
+		padding: 0 30px;
 	}
 	@include respond-to("laptop") {
-		justify-content: unset;
+		padding: 0 30px;
+	}
+	@include respond-to("mobile") {
+		padding: 0 20px;
+	}
+	.home__container {
+		display: flex;
+		margin: auto;
+		justify-content: space-between;
+		margin: auto;
 	}
 }
 .home__welcome {
@@ -68,7 +61,7 @@
 	}
 
 	@include respond-to("mobile") {
-		max-width: 100%;
+		// max-width: 100%;
 	}
 }
 .herosection__left {
@@ -105,6 +98,10 @@
 		font-size: 45px;
 		line-height: 50px;
 	}
+	@include respond-to("small") {
+		font-size: 40px;
+		line-height: 50px;
+	}
 }
 .home__image-container {
 	position: relative;
@@ -131,6 +128,10 @@
 .home__button-container {
 	display: flex;
 	margin-top: 30px;
+	@include respond-to("small") {
+		flex-direction: column-reverse;
+		gap: 5px;
+	}
 }
 .home__shape-container {
 	width: 86px;

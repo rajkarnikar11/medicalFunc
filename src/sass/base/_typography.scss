@@ -20,6 +20,9 @@
 	@include respond-to("tablet") {
 		padding: 0 30px;
 	}
+	@include respond-to("small") {
+		padding: 0 10px;
+	}
 }
 .title {
 	font-weight: 700;
@@ -30,6 +33,10 @@
 	@include respond-to("tablet") {
 		padding: 0 30px;
 	}
+	@include respond-to("small") {
+		padding: 0 10px;
+		max-width: 280px;
+	}
 }
 .description {
 	font-size: 14px;
@@ -37,12 +44,15 @@
 	color: variable.$secondary-color;
 	margin: 10px 0;
 	margin: 10px 0;
-	width: 469px;
 	font-weight: 500;
+	max-width: 100%;
 	// padding-left: 20px;
 
 	@include respond-to("tablet") {
 		padding: 0 30px;
+	}
+	@include respond-to("small") {
+		padding: 0 10px;
 	}
 }
 .description-center {
@@ -61,13 +71,13 @@
 		padding: 0 30px;
 	}
 }
-@media (max-width: 1120px) {
-	.description-center,
-	.description,
-	.title,
-	.practice-advice,
-	.leading-medicine__link-text {
-		padding: 0 30px;
-		flex-direction: column;
-	}
-}
+// @media (max-width: 1120px) {
+// 	.description-center,
+// 	.description,
+// 	.title,
+// 	.practice-advice,
+// 	.leading-medicine__link-text {
+// 		padding: 0 30px;
+// 		flex-direction: column;
+// 	}
+// }

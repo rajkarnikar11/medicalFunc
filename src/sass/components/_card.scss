@@ -6,13 +6,26 @@
 .activity__card {
 	// padding: 40px 42.5px;
 	height: 288px;
-	width: 328px;
-
+	width: 31.4%;
 	box-shadow: 0px 13px 19px 0px #00000012;
+	@include respond-to("mobile") {
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 20px;
+		box-shadow: 0px 13px 19px 0px rgba(#00000012, 0.05);
+		margin-bottom: 60px;
+	}
 }
 .activity__card-image {
 	margin-top: 40px;
 	margin-left: 42.5px;
+	@include respond-to("mobile") {
+		margin-left: 0;
+	}
 }
 .activity__card-title {
 	margin-left: 42.5px;
@@ -26,9 +39,17 @@
 		width: 50px;
 		left: 0;
 		background-color: variable.$danger-color;
+		@include respond-to("mobile") {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
+
 	@include respond-to("tablet") {
 		margin: 25px 35px;
+	}
+	@include respond-to("mobile") {
+		margin: auto;
 	}
 }
 .activity__card-description {
@@ -37,54 +58,45 @@
 	width: 132px;
 	height: 60px;
 	font-weight: 500;
+	@include respond-to("mobile") {
+		margin-left: 0;
+		width: 100%;
+	}
 }
 
 // specialize section
 
 .specialize__card {
-	height: 678px;
-	width: 348px;
+	width: 32%;
 	@include respond-to("tablet") {
-		height: 900px;
-		width: 600px;
+		width: 60%;
+		margin-bottom: 100px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 	@include respond-to("mobile") {
-		height: 678px;
-		width: 348px;
+		width: 90%;
 	}
 }
 .specialize__image-container {
 	height: 300px;
-	width: 348px;
+	width: 100%;
 	position: relative;
 	background-repeat: no-repeat;
-	background-size: 348px 300px;
+	background-size: 100%;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
-	@include respond-to("tablet") {
-		height: 510px;
-		width: 600px;
-		background-size: 600px 510px;
-	}
-	@include respond-to("mobile") {
-		height: 300px;
-		width: 348px;
-		background-size: 348px 300px;
-	}
-
-	&--first {
-		background-image: url("../assets/specialize1.png");
-	}
-
-	&--second {
-		background-image: url("../assets/specialize2.png");
-	}
-	&--third {
-		background-image: url("../assets/specialize3.png");
-	}
+}
+.specialize__image {
+	position: absolute;
+	height: 300px;
+	width: 100%;
+	inset: 0 0 0 0;
+	z-index: -1;
+	object-fit: cover;
 }
 
 .specialize__button-container {
@@ -112,8 +124,7 @@
 	margin-top: 11px;
 }
 .specialize__card-description {
-	width: 280px;
-	height: 60px;
+	max-width: 280px;
 	font-weight: 500;
 	margin-top: 10px;
 }
@@ -141,15 +152,19 @@
 //pricing
 
 .pricing__card {
-	height: 908px;
-	width: 323px;
+	width: 31.13%;
+
 	padding: 50px 40.5px;
 	box-shadow: 0px 13px 19px 0px #00000012;
 	@include respond-to("tablet") {
-		width: 600px;
+		width: 60%;
+		margin-bottom: 100px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 	@include respond-to("mobile") {
-		width: 323px;
+		width: 90%;
 	}
 
 	position: relative;
@@ -183,6 +198,9 @@
 			height: 55px;
 			width: 55px;
 			font-size: 16px;
+		}
+		@include respond-to("small") {
+			transform: translate(0%, -30%);
 		}
 	}
 }
@@ -237,9 +255,15 @@
 //client
 
 .client__card {
-	width: 348px;
-	height: 317px;
+	width: 32%;
 	padding-top: 55px;
+	@include respond-to("mobile") {
+		width: 90%;
+		margin-bottom: 100px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 }
 .client__star-container {
 	display: flex;
@@ -250,8 +274,6 @@
 	margin: auto;
 }
 .client__card-description {
-	width: 159px;
-	height: 120px;
 	margin: auto;
 	margin-top: 15px;
 	font-weight: 500;

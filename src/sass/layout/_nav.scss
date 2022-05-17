@@ -33,6 +33,9 @@
 		flex-direction: column;
 		justify-content: space-around;
 	}
+	@include respond-to("mobile") {
+		right: 10px;
+	}
 }
 
 .navbar__burger-line {
@@ -78,15 +81,15 @@
 		flex-direction: column;
 		margin: auto;
 		align-items: center;
-		margin-top: 100px;
 		position: absolute;
-		right: -10vw;
-		width: 30vw;
+		top: 60px;
+		right: 5px;
+		width: 200px;
 		background-color: variable.$faded-primary-color;
 		color: variable.$light-text-color;
 	}
 	@include respond-to("mobile") {
-		right: -5vw;
+		right: 5px;
 	}
 }
 .navbar__list {
@@ -96,6 +99,7 @@
 	font-size: 14px;
 	@include respond-to("tablet") {
 		width: 100%;
+		padding: 10px;
 	}
 
 	&::before {
@@ -157,13 +161,13 @@
 		position: absolute;
 		background-color: variable.$faded-primary-color;
 		border-radius: 0 0 0 5px;
-		right: -10vw;
-		width: 30vw;
+		right: 5px;
+		width: 200px;
 		z-index: 2;
-		top: 285px;
+		top: 325px;
 	}
 	@include respond-to("mobile") {
-		right: -5vw;
+		right: 5px;
 	}
 }
 .navbar__logo {
@@ -179,8 +183,7 @@
 		left: 0;
 	}
 	@include respond-to("mobile") {
-		left: 50%;
-		transform: translateX(-50%);
+		left: 0%;
 	}
 }
 .navbar__login {
@@ -189,7 +192,7 @@
 	font-weight: 700;
 	transition-duration: 0.5s;
 	@include respond-to("tablet") {
-		margin: 5px;
+		margin: 25px;
 		text-align: center;
 	}
 	&:hover {

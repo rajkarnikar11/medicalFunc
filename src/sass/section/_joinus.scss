@@ -1,3 +1,5 @@
+@use "../abstract/variables" as variable;
+
 .joinus__input-container {
 	margin: auto;
 	margin-top: 80px;
@@ -16,7 +18,13 @@
 	padding-left: 30px;
 	font-weight: 500;
 }
-
+.joinus__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	color: variable.$text-color;
+	margin-top: 10px;
+}
 .joinus {
 	text-align: center;
 }
