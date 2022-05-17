@@ -1546,6 +1546,11 @@ li {
   left: 0;
   background-color: #e74040;
 }
+@media (max-width: 1126px) {
+  .activity__card-title {
+    margin: 25px 35px;
+  }
+}
 
 .activity__card-description {
   margin-left: 42.5px;

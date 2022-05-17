@@ -27,6 +27,9 @@
 		left: 0;
 		background-color: variable.$danger-color;
 	}
+	@include respond-to("tablet") {
+		margin: 25px 35px;
+	}
 }
 .activity__card-description {
 	margin-left: 42.5px;
