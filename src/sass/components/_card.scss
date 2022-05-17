@@ -42,8 +42,8 @@
 	height: 678px;
 	width: 348px;
 	@include respond-to("tablet") {
-		height: 1200px;
-		width: 696px;
+		height: 900px;
+		width: 600px;
 	}
 	@include respond-to("mobile") {
 		height: 678px;
@@ -62,9 +62,9 @@
 	justify-content: space-between;
 
 	@include respond-to("tablet") {
-		height: 600px;
-		width: 696px;
-		background-size: 696px 600px;
+		height: 510px;
+		width: 600px;
+		background-size: 600px 510px;
 	}
 	@include respond-to("mobile") {
 		height: 300px;

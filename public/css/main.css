@@ -1561,8 +1561,8 @@ li {
 }
 @media (max-width: 1126px) {
   .specialize__card {
-    height: 1200px;
-    width: 696px;
+    height: 900px;
+    width: 600px;
   }
 }
 @media (max-width: 767px) {
@@ -1585,9 +1585,9 @@ li {
 }
 @media (max-width: 1126px) {
   .specialize__image-container {
-    height: 600px;
-    width: 696px;
-    background-size: 696px 600px;
+    height: 510px;
+    width: 600px;
+    background-size: 600px 510px;
   }
 }
 @media (max-width: 767px) {
