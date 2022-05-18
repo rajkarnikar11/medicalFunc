@@ -12,11 +12,12 @@
 	@include respond-to("tablet") {
 		flex-direction: column;
 		justify-content: flex-start;
-		margin-left: 30px;
+		margin: 0px 30px;
 	}
 	@include respond-to("laptop") {
 	}
 	@include respond-to("mobile") {
+		margin: 0px 20px;
 	}
 }
 .navbar__burger-container {
@@ -26,7 +27,7 @@
 	cursor: pointer;
 	top: 15px;
 	z-index: 10;
-	right: 10px;
+	right: 0;
 	display: none;
 	@include respond-to("tablet") {
 		display: flex;
@@ -34,7 +35,6 @@
 		justify-content: space-around;
 	}
 	@include respond-to("mobile") {
-		right: 10px;
 	}
 }
 
@@ -83,13 +83,12 @@
 		align-items: center;
 		position: absolute;
 		top: 60px;
-		right: 5px;
+		right: 0px;
 		width: 200px;
 		background-color: variable.$faded-primary-color;
 		color: variable.$light-text-color;
 	}
 	@include respond-to("mobile") {
-		right: 5px;
 	}
 }
 .navbar__list {
@@ -161,13 +160,12 @@
 		position: absolute;
 		background-color: variable.$faded-primary-color;
 		border-radius: 0 0 0 5px;
-		right: 5px;
 		width: 200px;
 		z-index: 2;
 		top: 325px;
+		right: 0;
 	}
 	@include respond-to("mobile") {
-		right: 5px;
 	}
 }
 .navbar__logo {
@@ -183,7 +181,6 @@
 		left: 0;
 	}
 	@include respond-to("mobile") {
-		left: 0%;
 	}
 }
 .navbar__login {
