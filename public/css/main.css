@@ -746,6 +746,10 @@
   margin-top: 10px;
   min-width: 150px;
   text-align: left;
+  transition-duration: 0.3s;
+}
+.footer__item:hover {
+  color: #23a6f0;
 }
 
 .footer__item-right {
@@ -753,6 +757,10 @@
   font-size: 14px;
   line-height: 24px;
   color: #737373;
+  transition-duration: 0.3s;
+}
+.footer__item-right:hover {
+  color: #23a6f0;
 }
 
 .footer__item-right {
@@ -1007,15 +1015,28 @@
   font-size: 14px;
   font-weight: 700;
   transition-duration: 0.5s;
+  position: relative;
+}
+.navbar__login:after {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  bottom: -5px;
+  right: 0;
+  transition-duration: 0.3s;
+  transform-origin: right;
+}
+.navbar__login:hover::after {
+  left: 0;
+  width: 100%;
 }
 @media (max-width: 1126px) {
   .navbar__login {
     margin: 25px;
     text-align: center;
   }
-}
-.navbar__login:hover {
-  transform: scale(1.1);
 }
 
 .navbar__button {
