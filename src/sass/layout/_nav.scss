@@ -188,13 +188,30 @@
 	font-size: 14px;
 	font-weight: 700;
 	transition-duration: 0.5s;
+	position: relative;
+	&:after {
+		content: " ";
+		position: absolute;
+		height: 2px;
+		width: 0%;
+		background-color: variable.$light_background-color;
+		bottom: -5px;
+		right: 0;
+		transition-duration: 0.3s;
+		transform-origin: right;
+	}
+	&:hover::after {
+		left: 0;
+		width: 100%;
+	}
 	@include respond-to("tablet") {
 		margin: 25px;
 		text-align: center;
 	}
-	&:hover {
-		transform: scale(1.1);
-	}
+
+	// &:hover {
+	// 	transform: scale(1.1);
+	// }
 }
 .navbar__button {
 	color: variable.$light-text-color;
